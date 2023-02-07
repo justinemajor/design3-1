@@ -2,6 +2,7 @@
 #include <Vbias.h>                  // Header file for voltage bias thermistor temperature functions
 // #include <Ibias.h>                  // Header file for current bias thermistor temperature functions
 
+
 double in = 0;
 double Vo = 0;
 double V1 = 0;
