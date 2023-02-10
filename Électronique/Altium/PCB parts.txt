@@ -1,0 +1,8 @@
+Instrumentation Op Amp:
+-----------------------
+INA2332AIPWR
+Texas Instruments
+4,22$
+2 circuits
+Rail-to-Rail
+-3dB Bandwidth 2MHz
