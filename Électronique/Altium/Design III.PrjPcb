@@ -57,7 +57,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=10
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -396,52 +396,52 @@ DocumentPath=..\..\..\..\..\..\..\ProgramData\Altium\Altium Designer {09C6F22D-5
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Author
-Value==Author
+Name=Units
+Value=mm
 
 [Parameter2]
-Name=Classification
-Value=
-
-[Parameter3]
-Name=CourseID
-Value=GPH-3110
-
-[Parameter4]
-Name=DrawnBy
-Value=Maxime Tousignant-Tremblay
-
-[Parameter5]
-Name=ID Number
-Value=536 772 369
-
-[Parameter6]
-Name=IDUL
-Value=MATOT9
-
-[Parameter7]
-Name=Organization
-Value==Organization
-
-[Parameter8]
-Name=Revision
-Value==Revision
-
-[Parameter9]
-Name=SheetNumber
-Value==SheetNumber
-
-[Parameter10]
-Name=SheetTotal
-Value==SheetTotal
-
-[Parameter11]
 Name=Title
 Value==Title
 
+[Parameter3]
+Name=SheetTotal
+Value==SheetTotal
+
+[Parameter4]
+Name=SheetNumber
+Value==SheetNumber
+
+[Parameter5]
+Name=Revision
+Value==Revision
+
+[Parameter6]
+Name=Organization
+Value==Organization
+
+[Parameter7]
+Name=IDUL
+Value=MATOT9
+
+[Parameter8]
+Name=ID Number
+Value=536 772 369
+
+[Parameter9]
+Name=DrawnBy
+Value=Maxime Tousignant-Tremblay
+
+[Parameter10]
+Name=CourseID
+Value=GPH-3110
+
+[Parameter11]
+Name=Classification
+Value=
+
 [Parameter12]
-Name=Units
-Value=mm
+Name=Author
+Value==Author
 
 [Configuration1]
 Name=Sources
@@ -1330,7 +1330,7 @@ Type27=2
 Type28=1
 Type29=1
 Type30=1
-Type31=1
+Type31=0
 Type32=2
 Type33=0
 Type34=2
