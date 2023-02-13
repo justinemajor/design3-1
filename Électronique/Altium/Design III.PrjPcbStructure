@@ -1,5 +1,4 @@
 Record=TopLevelDocument|FileName=Power Supply Unit.SchDoc|SheetNumber=3
 Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Processing interface.SchDoc|SheetNumber=1
 Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Thermistors.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridges part I.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridges part II.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridge.SchDoc|SheetNumber=4
