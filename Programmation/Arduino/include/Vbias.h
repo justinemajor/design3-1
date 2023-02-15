@@ -4,16 +4,16 @@
 #include <math.h>                          // Header file for various mathematical functions
 
 
-// ====================== Weatstone bridge equation ======================
+// ====================== Wheatstone bridge equation ======================
 
 double Vg = 0;                             // Voltage difference of the Weatstone bridge
 double Rx = 0;                             // Unknown thermistor resistance
 const float Vs = 3.3;                      // Weatstone bridge supply voltage
 const float G = 1.494;                     // Amplifier gain
-const unsigned short int Rref = 10E3;      // Weatstone bridge's resistances value
+const unsigned short int Rref = 10E3;      // Wseatstone bridge's resistances value
 
 
-double Vbias_weatstone(double raw_ADC){
+double Vbias_wheatstone(double raw_ADC){
     Vg = raw_ADC / G;
     Rx = Rref*(1 - (4*Vg) / (2*Vg - Vs));
     return Rx;

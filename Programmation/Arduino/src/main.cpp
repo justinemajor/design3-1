@@ -1,7 +1,6 @@
 #include <Arduino.h>                // Header file for Arduino functions
 #include <SPI.h>                    // Header file for SPI devices communication functions
 #include <Vbias.h>                  // Header file for voltage bias thermistor temperature functions
-// #include <Ibias.h>                  // Header file for current bias thermistor temperature functions
 
 
 double Vo = 0;
@@ -44,12 +43,10 @@ void setup() {
 
 void loop() {
   in = analogRead(A1);        // Read the voltage from thermistor; analogRead values go from 0 to 1023
-  Vo = (5.0/1024.0)*in;
+  Vo = (5.0/1023.0)*in;
 
-  R = Vbias_weatstone(Vo);    // Calculate thermistor resistance using nodal analysis
+  R = Vbias_wheatstone(Vo);    // Calculate thermistor resistance using nodal analysis
   T = Vbias_steinhart(R);     // Calculate thermistor temperature using Steinhart-Hart equation
-  // analogWrite(2, in);         // Generate PWM with analog input
   Serial.println(T, 6);
-  delay(10);                  // Add delay in ms between each sample
 
 }
