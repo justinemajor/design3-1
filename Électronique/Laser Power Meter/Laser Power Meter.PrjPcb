@@ -50,6 +50,40 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NGLTGAHM
+
+[Document2]
+DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MPRJBCLL
+
+[Document3]
 DocumentPath=Libraries\ULaval Title Block.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -66,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YOUTGPEY
 
-[Document2]
+[Document4]
 DocumentPath=PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWGESTMF
 
-[Document3]
+[Document5]
 DocumentPath=Processing interface.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VVJYOFGR
 
-[Document4]
+[Document6]
 DocumentPath=Power Supply Unit.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SEIOAEZJ
 
-[Document5]
+[Document7]
 DocumentPath=Weatstone bridge part I.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PPHGJKSC
 
-[Document6]
+[Document8]
 DocumentPath=Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document9]
 DocumentPath=Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document10]
 DocumentPath=Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document11]
 DocumentPath=ActiveBOM.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document12]
 DocumentPath=Weatstone bridge part II.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KKGMJUNX
 
-[Document11]
+[Document13]
 DocumentPath=Weatstone bridge part III.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -237,108 +271,108 @@ GenerateClassCluster=0
 DocumentUniqueId=XNSHJLBQ
 
 [Parameter1]
-Name=Units
-Value=mm
-
-[Parameter2]
-Name=SCH_REV
-Value=A
-
-[Parameter3]
-Name=PCB_REV
-Value=A
-
-[Parameter4]
-Name=PCB_PART_NUMBER
-Value=<PCB PN>
-
-[Parameter5]
-Name=PCB_ENGINEER_APP_DATE
-Value=--/--/----
-
-[Parameter6]
-Name=PCB_ENGINEER
-Value=- -----
-
-[Parameter7]
-Name=PCB_DWG_NO
-Value=<PCB DWG NO>
-
-[Parameter8]
-Name=PCB_DESIGNER_APP_DATE
-Value=--/--/----
-
-[Parameter9]
-Name=PCB_DESIGNER
-Value=- -----
-
-[Parameter10]
-Name=PCB_CHECKER_APP_DATE
-Value=--/--/----
-
-[Parameter11]
-Name=PCB_CHECKER
-Value=- -----
-
-[Parameter12]
-Name=PCB_ASSEMBLY_NO
-Value=<PCB ASSY NO>
-
-[Parameter13]
-Name=PCB_ANG_TOL
-Value=+/-1/2
-
-[Parameter14]
-Name=PCB_3_DEC_TOL
-Value=+/-.010
-
-[Parameter15]
-Name=PCB_2_DEC_TOL
-Value=+/-.01
-
-[Parameter16]
-Name=IDUL
-Value=MATOT9
-
-[Parameter17]
-Name=ID Number
-Value=536 772 369
-
-[Parameter18]
-Name=DrawnBy
+Name=Author
 Value=Maxime Tousignant-Tremblay
 
-[Parameter19]
-Name=DOC_NO_SCH_DWG
-Value=<SCH DWG NO>
-
-[Parameter20]
-Name=DOC_NO_FAB_DWG
-Value=<FAB DWG NO>
-
-[Parameter21]
-Name=DOC_NO_BOM
-Value=<BOM DOC NO>
-
-[Parameter22]
-Name=DOC_NO_ASSY_DWG
-Value=<ASSY DWG NO>
-
-[Parameter23]
-Name=CourseID
-Value=GPH-3110
-
-[Parameter24]
-Name=CONTRACT_NUMBER
-Value=<CONTRACT NO>
-
-[Parameter25]
+[Parameter2]
 Name=CAGE_CODE
 Value=?????
 
-[Parameter26]
-Name=Author
+[Parameter3]
+Name=CONTRACT_NUMBER
+Value=<CONTRACT NO>
+
+[Parameter4]
+Name=CourseID
+Value=GPH-3110
+
+[Parameter5]
+Name=DOC_NO_ASSY_DWG
+Value=<ASSY DWG NO>
+
+[Parameter6]
+Name=DOC_NO_BOM
+Value=<BOM DOC NO>
+
+[Parameter7]
+Name=DOC_NO_FAB_DWG
+Value=<FAB DWG NO>
+
+[Parameter8]
+Name=DOC_NO_SCH_DWG
+Value=<SCH DWG NO>
+
+[Parameter9]
+Name=DrawnBy
 Value=Maxime Tousignant-Tremblay
+
+[Parameter10]
+Name=ID Number
+Value=536 772 369
+
+[Parameter11]
+Name=IDUL
+Value=MATOT9
+
+[Parameter12]
+Name=PCB_2_DEC_TOL
+Value=+/-.01
+
+[Parameter13]
+Name=PCB_3_DEC_TOL
+Value=+/-.010
+
+[Parameter14]
+Name=PCB_ANG_TOL
+Value=+/-1/2
+
+[Parameter15]
+Name=PCB_ASSEMBLY_NO
+Value=<PCB ASSY NO>
+
+[Parameter16]
+Name=PCB_CHECKER
+Value=- -----
+
+[Parameter17]
+Name=PCB_CHECKER_APP_DATE
+Value=--/--/----
+
+[Parameter18]
+Name=PCB_DESIGNER
+Value=- -----
+
+[Parameter19]
+Name=PCB_DESIGNER_APP_DATE
+Value=--/--/----
+
+[Parameter20]
+Name=PCB_DWG_NO
+Value=<PCB DWG NO>
+
+[Parameter21]
+Name=PCB_ENGINEER
+Value=- -----
+
+[Parameter22]
+Name=PCB_ENGINEER_APP_DATE
+Value=--/--/----
+
+[Parameter23]
+Name=PCB_PART_NUMBER
+Value=<PCB PN>
+
+[Parameter24]
+Name=PCB_REV
+Value=A
+
+[Parameter25]
+Name=SCH_REV
+Value=A
+
+[Parameter26]
+Name=Units
+Value=mm
 
 [Configuration1]
 Name=Default Configuration
