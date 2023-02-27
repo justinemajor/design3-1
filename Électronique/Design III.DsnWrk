@@ -4,7 +4,3 @@ Version=1.0
 ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
 [Project2]
 ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
-[Project3]
-ProjectPath=..\..\..\GPH\Datasheets\Passives\Capacitors\Tantalum\293D\293D106X9010C2TE3\AltiumDesigner\UL_Import_293D106X9010C2TE3.PrjScr
-[Project5]
-ProjectPath=..\..\..\GPH\Datasheets\Arduino\Nano BLE Sense Rev2\CAD\Arduino Nano BLE Sense Rev2.LibPkg

@@ -185,6 +185,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document9]
+DocumentPath=..\..\..\..\GPH\Datasheets\Connectors\Rectangular connectors\SFC-110-T1-F-D-A\SFC-110-T1-F-D-A\SAMTEC_SFC-110-T1-F-D-A.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [Parameter1]
 Name=CAGE_CODE
 Value=?????
