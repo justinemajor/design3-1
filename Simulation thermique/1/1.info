@@ -1,0 +1,62 @@
+Model: Assemblage_V2.SLDASM
+Project name: Thermal V3
+Config name: Défaut
+Project path: C:\Thermique Design\Design V3\1\1.xmlconfig
+Status: Calculating
+
+Number of cells:
+    Total cells: 85301
+    Fluid cells: 43165
+    Solid cells: 42136
+    Fluid cells containing solids: 25655
+
+
+Geometry preparation finished: 17:51:40
+Geometry preparation time: 00:00:14
+Solver CPU time: 00:22:58
+Iterations: 537
+Travels: 2.82151
+Physical time: 4.042471e+02 s
+Current time step: 5.457338e-01 s
+Last iteration finished: 18:14:21
+CPU time per last iteration: 00:00:03
+CPU time left: 00:03:51
+Iterations per 1 travel: 191
+
+Goals
+    Name                        | Unit (SI)   | Value           | Progress  | Critetia        | Delta           | Use in convergence
+    PG Température (Solide) 1  | temperature |          303.51 |      21.2 |            0.25 |            1.19 | On
+    PG Température (Solide) 2  | temperature |          303.27 |      22.3 |            0.23 |            1.02 | On
+    PG Température (Solide) 3  | temperature |          303.50 |      21.2 |            0.25 |            1.19 | On
+    PG Température (Solide) 4  | temperature |          303.28 |      22.2 |            0.23 |            1.04 | On
+    PG Température (Solide) 5  | temperature |          303.20 |      22.7 |            0.22 |            0.98 | On
+    PG Température (Solide) 6  | temperature |          303.27 |      22.3 |            0.23 |            1.03 | On
+    PG Température (Solide) 7  | temperature |          303.46 |      21.1 |            0.25 |            1.19 | On
+    PG Température (Solide) 8  | temperature |          303.27 |      22.2 |            0.23 |            1.04 | On
+    PG Température (Solide) 9  | temperature |          303.45 |      21.2 |            0.25 |            1.18 | On
+    PG Température (Solide) 10 | temperature |          304.26 |      92.1 |            0.14 |            0.15 | On
+
+Project details
+    Default fluids: Air
+    Analysis type: External
+    Heat conduction in solids: On
+    Radiation: On
+    Time dependent: On
+    Gravitational effects: On
+    Flow type: Laminar and turbulent
+    Cavitation: Off
+    Hign Mach number flow: On
+    Free surface: Off
+    Structural: Off
+    Electromagnetism: Off
+
+System info
+    Product: Flow Simulation 2022  x64 / 5593 / SOLVER ver. efd_2021_2.5587_14.01.2022+LamBL_4order_point_appr
+    CAD version: SOLIDWORKS 2022 SP3.1
+    Computer name: AIENWARE-17-R5
+    User name: Maxime
+    Operating system: Windows 10 (or higher) (Version 10.0.22621)
+    Processors: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+    Number of cores: 12
+    Memory: 20627 MB / 32624 MB
+
