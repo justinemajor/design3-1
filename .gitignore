@@ -452,3 +452,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+Programmation/Arduino/Reference codes
+Programmation/Arduino/RefCodes/LEDMatrix
