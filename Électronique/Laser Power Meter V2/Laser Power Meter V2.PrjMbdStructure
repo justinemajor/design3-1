@@ -1,0 +1,4 @@
+Record=DiagramHierarchy|SourceDocument=Design III.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\Laser Power Meter\Laser Power Meter.PrjPcb
+Record=SubProject|SourceDocument=Design III.MbsDoc|ProjectPath=..\Laser Power Meter\Laser Power Meter.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Design III.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\Thermistors Board\Thermistors Board.PrjPcb
+Record=SubProject|SourceDocument=Design III.MbsDoc|ProjectPath=..\Thermistors Board\Thermistors Board.PrjPcb

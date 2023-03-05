@@ -1,0 +1,701 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2023-03-02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">15:27:26</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc" class="file"><acronym title="C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc">C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">119</td></tr>
+</table>
+</td>
+</table><a name="IDYC2S20N2PMUNOYIE5K0KF2B1QNWXR5XEKQEY22BVNOVFANKJRHHJ"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMYT0JH5ZMSMTP0UBF10ILCTP0LP1OF12AEIPTCDABVFJLV0TNN3K">Clearance Constraint (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNMTVICQ02IUAGDVE4OCKE5P2UHKSM4SNXHCYAWGNNVJQMZG1V4FL">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZE2GOI0TKXE2FB1WS5DJUG44BLG04ZGKD3HPRG0GAGNSEFECS4F">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAH2W23D4RTC5MQOXVL4DSIG1ROJIEHV0RZ1YB3HKH3DE4JK4VF4G">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDZTILXUKN1C0K5BMWCILCEZ2LHBRE21MUR3CGOB2QGKNZIIIWOHI">Width Constraint (Min=0.127mm) (Max=0.25mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLNMEOEHARRK1M5UNN3YMLLTNDLKBQZLNJZ5I1VE2HL3VW20DYFJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKNOPHKKYZZM2D3QZPARKR251LFC2IJ4Q3K1YK2GYRMAMJ1G1UR4F">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMUFQPZGBTMHPHKPAJGXIQCSNBDXIHZRRMABBLABPKAPWRRUTOJFF">Hole Size Constraint (Min=0.2mm) (Max=6.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWJXCGHER325JOQB3CDWU4ZPITGDDP4WMVG3DDEGSNCR01ZLLBQDP">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3CZCZFBNKZSLD5ICRJ1ZY0EUFD15F4GWGI2IRBNTJ0FW2OFHEROG">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">116</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWTQ4KV0KLVKZMPHDP5XO2KYXXJG0CH5HUQKNHRKGGZWWVQLS3NCI">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDV5DNZH2P4G5LCVH20PJV4YHGMICUHPHTEYW4LXF5OFY3FUPQ5OKJ">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUWNDKV0MOTOQDLHNM12LZM1S0EJZ3OVEQMW0FKNXZPCTMB0ZV0FJ">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQH31NJUYQ01TL2JBIXQULCFPAPN3TGE1XRM4MVM5SIPW1LZ2UN">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5W5RZO2E1OTXMFRVVCHI5X4KTLBTABNDQHIRP5LN5RQSJXSC3ARI">Room Matrix (Bounding Region = (71.12mm, 44.704mm, 130.429mm, 107.315mm) (InComponentClass('Matrix'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXHDWUAISC3VBN2CLXPMJPDO4QOIW1AGDHHG3NGON4IAHBYRVNPFO">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">119</td>
+</tr>
+</table><br><a name="IDZE2GOI0TKXE2FB1WS5DJUG44BLG04ZGKD3HPRG0GAGNSEFECS4F"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.133mil|Location2.X=3968.307mil|Location1.Y=1799.449mil|Location2.Y=2234.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3915.133mil|Location2.X=3968.307mil|Location1.Y=1799.449mil|Location2.Y=2234.866mil|Absolute=True">Un-Routed Net Constraint: Net D14 Between Pad J4-10(-0.635mm,-21.336mm) on Multi-Layer And Pad R52-2(-0.381mm,-31.299mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.133mil|Location2.X=4123.307mil|Location1.Y=1818.071mil|Location2.Y=2234.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.133mil|Location2.X=4123.307mil|Location1.Y=1818.071mil|Location2.Y=2234.866mil|Absolute=True">Un-Routed Net Constraint: Net D15 Between Pad J4-12(0.635mm,-21.336mm) on Multi-Layer And Pad R56-2(3.556mm,-30.826mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3731.693mil|Location2.X=3914.866mil|Location1.Y=1838.071mil|Location2.Y=2234.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3731.693mil|Location2.X=3914.866mil|Location1.Y=1838.071mil|Location2.Y=2234.866mil|Absolute=True">Un-Routed Net Constraint: Net D13 Between Pad R48-2(-5.461mm,-30.318mm) on Multi-Layer And Pad J4-8(-1.905mm,-21.336mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3CZCZFBNKZSLD5ICRJ1ZY0EUFD15F4GWGI2IRBNTJ0FW2OFHEROG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4212.131mil|Location2.X=4223.381mil|Location1.Y=3924.251mil|Location2.Y=3935.501mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4212.131mil|Location2.X=4223.381mil|Location1.Y=3924.251mil|Location2.Y=3935.501mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad J1-(7.305mm,22.352mm) on Multi-Layer And Pad J1-1(5.715mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.147mm] / [Bottom Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.375mil|Location2.X=4195.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.375mil|Location2.X=4195.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-1(5.715mm,21.717mm) on Multi-Layer And Pad J1-2(5.715mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.375mil|Location2.X=4170.625mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.375mil|Location2.X=4170.625mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-1(5.715mm,21.717mm) on Multi-Layer And Pad J1-3(4.445mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-10(0.635mm,22.987mm) on Multi-Layer And Pad J1-12(-0.635mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-10(0.635mm,22.987mm) on Multi-Layer And Pad J1-8(1.905mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.375mil|Location2.X=3995.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.375mil|Location2.X=3995.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-10(0.635mm,22.987mm) on Multi-Layer And Pad J1-9(0.635mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.375mil|Location2.X=3945.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.375mil|Location2.X=3945.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-11(-0.635mm,21.717mm) on Multi-Layer And Pad J1-12(-0.635mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-11(-0.635mm,21.717mm) on Multi-Layer And Pad J1-13(-1.905mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-11(-0.635mm,21.717mm) on Multi-Layer And Pad J1-9(0.635mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-12(-0.635mm,22.987mm) on Multi-Layer And Pad J1-14(-1.905mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3884.375mil|Location2.X=3895.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3884.375mil|Location2.X=3895.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-13(-1.905mm,21.717mm) on Multi-Layer And Pad J1-14(-1.905mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-13(-1.905mm,21.717mm) on Multi-Layer And Pad J1-15(-3.175mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-14(-1.905mm,22.987mm) on Multi-Layer And Pad J1-16(-3.175mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3834.375mil|Location2.X=3845.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3834.375mil|Location2.X=3845.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-15(-3.175mm,21.717mm) on Multi-Layer And Pad J1-16(-3.175mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-15(-3.175mm,21.717mm) on Multi-Layer And Pad J1-17(-4.445mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-16(-3.175mm,22.987mm) on Multi-Layer And Pad J1-18(-4.445mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3784.375mil|Location2.X=3795.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3784.375mil|Location2.X=3795.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-17(-4.445mm,21.717mm) on Multi-Layer And Pad J1-18(-4.445mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-17(-4.445mm,21.717mm) on Multi-Layer And Pad J1-19(-5.715mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-18(-4.445mm,22.987mm) on Multi-Layer And Pad J1-20(-5.715mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3734.375mil|Location2.X=3745.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3734.375mil|Location2.X=3745.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-19(-5.715mm,21.717mm) on Multi-Layer And Pad J1-20(-5.715mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-2(5.715mm,22.987mm) on Multi-Layer And Pad J1-4(4.445mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4134.375mil|Location2.X=4145.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4134.375mil|Location2.X=4145.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-3(4.445mm,21.717mm) on Multi-Layer And Pad J1-4(4.445mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-3(4.445mm,21.717mm) on Multi-Layer And Pad J1-5(3.175mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-4(4.445mm,22.987mm) on Multi-Layer And Pad J1-6(3.175mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4084.375mil|Location2.X=4095.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4084.375mil|Location2.X=4095.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-5(3.175mm,21.717mm) on Multi-Layer And Pad J1-6(3.175mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-5(3.175mm,21.717mm) on Multi-Layer And Pad J1-7(1.905mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=3949.375mil|Location2.Y=3960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-6(3.175mm,22.987mm) on Multi-Layer And Pad J1-8(1.905mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4034.375mil|Location2.X=4045.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4034.375mil|Location2.X=4045.625mil|Location1.Y=3924.375mil|Location2.Y=3935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-7(1.905mm,21.717mm) on Multi-Layer And Pad J1-8(1.905mm,22.987mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=3899.375mil|Location2.Y=3910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J1-7(1.905mm,21.717mm) on Multi-Layer And Pad J1-9(0.635mm,21.717mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.498mil|Location2.X=3080.748mil|Location1.Y=3302.131mil|Location2.Y=3313.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.498mil|Location2.X=3080.748mil|Location1.Y=3302.131mil|Location2.Y=3313.381mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad J2-(-22.606mm,7.432mm) on Multi-Layer And Pad J2-1(-21.971mm,5.842mm) on Multi-Layer [Top Solder] Mask Sliver [0.147mm] / [Bottom Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.375mil|Location2.X=3080.625mil|Location1.Y=3274.375mil|Location2.Y=3285.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.375mil|Location2.X=3080.625mil|Location1.Y=3274.375mil|Location2.Y=3285.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-1(-21.971mm,5.842mm) on Multi-Layer And Pad J2-2(-23.241mm,5.842mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3249.375mil|Location2.Y=3260.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3249.375mil|Location2.Y=3260.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-1(-21.971mm,5.842mm) on Multi-Layer And Pad J2-3(-21.971mm,4.572mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3049.375mil|Location2.Y=3060.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3049.375mil|Location2.Y=3060.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-10(-23.241mm,0.762mm) on Multi-Layer And Pad J2-12(-23.241mm,-0.508mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3099.375mil|Location2.Y=3110.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3099.375mil|Location2.Y=3110.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-10(-23.241mm,0.762mm) on Multi-Layer And Pad J2-8(-23.241mm,2.032mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3074.375mil|Location2.Y=3085.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3074.375mil|Location2.Y=3085.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-10(-23.241mm,0.762mm) on Multi-Layer And Pad J2-9(-21.971mm,0.762mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3024.375mil|Location2.Y=3035.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3024.375mil|Location2.Y=3035.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-11(-21.971mm,-0.508mm) on Multi-Layer And Pad J2-12(-23.241mm,-0.508mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2999.375mil|Location2.Y=3010.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2999.375mil|Location2.Y=3010.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-11(-21.971mm,-0.508mm) on Multi-Layer And Pad J2-13(-21.971mm,-1.778mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3049.375mil|Location2.Y=3060.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3049.375mil|Location2.Y=3060.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-11(-21.971mm,-0.508mm) on Multi-Layer And Pad J2-9(-21.971mm,0.762mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2999.375mil|Location2.Y=3010.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2999.375mil|Location2.Y=3010.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-12(-23.241mm,-0.508mm) on Multi-Layer And Pad J2-14(-23.241mm,-1.778mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2974.375mil|Location2.Y=2985.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2974.375mil|Location2.Y=2985.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-13(-21.971mm,-1.778mm) on Multi-Layer And Pad J2-14(-23.241mm,-1.778mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2949.375mil|Location2.Y=2960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2949.375mil|Location2.Y=2960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-13(-21.971mm,-1.778mm) on Multi-Layer And Pad J2-15(-21.971mm,-3.048mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2949.375mil|Location2.Y=2960.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2949.375mil|Location2.Y=2960.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-14(-23.241mm,-1.778mm) on Multi-Layer And Pad J2-16(-23.241mm,-3.048mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2924.375mil|Location2.Y=2935.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2924.375mil|Location2.Y=2935.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-15(-21.971mm,-3.048mm) on Multi-Layer And Pad J2-16(-23.241mm,-3.048mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2899.375mil|Location2.Y=2910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2899.375mil|Location2.Y=2910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-15(-21.971mm,-3.048mm) on Multi-Layer And Pad J2-17(-21.971mm,-4.318mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2899.375mil|Location2.Y=2910.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2899.375mil|Location2.Y=2910.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-16(-23.241mm,-3.048mm) on Multi-Layer And Pad J2-18(-23.241mm,-4.318mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2874.375mil|Location2.Y=2885.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2874.375mil|Location2.Y=2885.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-17(-21.971mm,-4.318mm) on Multi-Layer And Pad J2-18(-23.241mm,-4.318mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2849.375mil|Location2.Y=2860.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=2849.375mil|Location2.Y=2860.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-17(-21.971mm,-4.318mm) on Multi-Layer And Pad J2-19(-21.971mm,-5.588mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2849.375mil|Location2.Y=2860.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=2849.375mil|Location2.Y=2860.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-18(-23.241mm,-4.318mm) on Multi-Layer And Pad J2-20(-23.241mm,-5.588mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2824.375mil|Location2.Y=2835.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=2824.375mil|Location2.Y=2835.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-19(-21.971mm,-5.588mm) on Multi-Layer And Pad J2-20(-23.241mm,-5.588mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3249.375mil|Location2.Y=3260.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3249.375mil|Location2.Y=3260.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-2(-23.241mm,5.842mm) on Multi-Layer And Pad J2-4(-23.241mm,4.572mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3224.375mil|Location2.Y=3235.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3224.375mil|Location2.Y=3235.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-3(-21.971mm,4.572mm) on Multi-Layer And Pad J2-4(-23.241mm,4.572mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3199.375mil|Location2.Y=3210.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3199.375mil|Location2.Y=3210.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-3(-21.971mm,4.572mm) on Multi-Layer And Pad J2-5(-21.971mm,3.302mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3199.375mil|Location2.Y=3210.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3199.375mil|Location2.Y=3210.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-4(-23.241mm,4.572mm) on Multi-Layer And Pad J2-6(-23.241mm,3.302mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3174.375mil|Location2.Y=3185.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3174.375mil|Location2.Y=3185.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-5(-21.971mm,3.302mm) on Multi-Layer And Pad J2-6(-23.241mm,3.302mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3149.375mil|Location2.Y=3160.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3149.375mil|Location2.Y=3160.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-5(-21.971mm,3.302mm) on Multi-Layer And Pad J2-7(-21.971mm,2.032mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3149.375mil|Location2.Y=3160.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3044.375mil|Location2.X=3055.625mil|Location1.Y=3149.375mil|Location2.Y=3160.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-6(-23.241mm,3.302mm) on Multi-Layer And Pad J2-8(-23.241mm,2.032mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3124.375mil|Location2.Y=3135.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3069.374mil|Location2.X=3080.624mil|Location1.Y=3124.375mil|Location2.Y=3135.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-7(-21.971mm,2.032mm) on Multi-Layer And Pad J2-8(-23.241mm,2.032mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3099.375mil|Location2.Y=3110.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3094.375mil|Location2.X=3105.625mil|Location1.Y=3099.375mil|Location2.Y=3110.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J2-7(-21.971mm,2.032mm) on Multi-Layer And Pad J2-9(-21.971mm,0.762mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.251mil|Location2.X=4845.501mil|Location1.Y=2791.619mil|Location2.Y=2802.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.251mil|Location2.X=4845.501mil|Location1.Y=2791.619mil|Location2.Y=2802.869mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad J3-(22.225mm,-7.305mm) on Multi-Layer And Pad J3-1(21.59mm,-5.715mm) on Multi-Layer [Top Solder] Mask Sliver [0.147mm] / [Bottom Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2819.375mil|Location2.Y=2830.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2819.375mil|Location2.Y=2830.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-1(21.59mm,-5.715mm) on Multi-Layer And Pad J3-2(22.86mm,-5.715mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2844.375mil|Location2.Y=2855.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2844.375mil|Location2.Y=2855.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-1(21.59mm,-5.715mm) on Multi-Layer And Pad J3-3(21.59mm,-4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3044.375mil|Location2.Y=3055.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3044.375mil|Location2.Y=3055.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-10(22.86mm,-0.635mm) on Multi-Layer And Pad J3-12(22.86mm,0.635mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-10(22.86mm,-0.635mm) on Multi-Layer And Pad J3-8(22.86mm,-1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3019.375mil|Location2.Y=3030.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3019.375mil|Location2.Y=3030.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-10(22.86mm,-0.635mm) on Multi-Layer And Pad J3-9(21.59mm,-0.635mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3069.375mil|Location2.Y=3080.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3069.375mil|Location2.Y=3080.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-11(21.59mm,0.635mm) on Multi-Layer And Pad J3-12(22.86mm,0.635mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3094.375mil|Location2.Y=3105.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3094.375mil|Location2.Y=3105.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-11(21.59mm,0.635mm) on Multi-Layer And Pad J3-13(21.59mm,1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3044.375mil|Location2.Y=3055.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3044.375mil|Location2.Y=3055.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-11(21.59mm,0.635mm) on Multi-Layer And Pad J3-9(21.59mm,-0.635mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3094.375mil|Location2.Y=3105.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3094.375mil|Location2.Y=3105.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-12(22.86mm,0.635mm) on Multi-Layer And Pad J3-14(22.86mm,1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3119.375mil|Location2.Y=3130.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3119.375mil|Location2.Y=3130.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-13(21.59mm,1.905mm) on Multi-Layer And Pad J3-14(22.86mm,1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3144.375mil|Location2.Y=3155.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3144.375mil|Location2.Y=3155.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-13(21.59mm,1.905mm) on Multi-Layer And Pad J3-15(21.59mm,3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3144.375mil|Location2.Y=3155.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3144.375mil|Location2.Y=3155.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-14(22.86mm,1.905mm) on Multi-Layer And Pad J3-16(22.86mm,3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3169.375mil|Location2.Y=3180.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3169.375mil|Location2.Y=3180.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-15(21.59mm,3.175mm) on Multi-Layer And Pad J3-16(22.86mm,3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3194.375mil|Location2.Y=3205.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3194.375mil|Location2.Y=3205.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-15(21.59mm,3.175mm) on Multi-Layer And Pad J3-17(21.59mm,4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3194.375mil|Location2.Y=3205.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3194.375mil|Location2.Y=3205.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-16(22.86mm,3.175mm) on Multi-Layer And Pad J3-18(22.86mm,4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3219.375mil|Location2.Y=3230.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3219.375mil|Location2.Y=3230.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-17(21.59mm,4.445mm) on Multi-Layer And Pad J3-18(22.86mm,4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3244.375mil|Location2.Y=3255.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=3244.375mil|Location2.Y=3255.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-17(21.59mm,4.445mm) on Multi-Layer And Pad J3-19(21.59mm,5.715mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3244.375mil|Location2.Y=3255.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=3244.375mil|Location2.Y=3255.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-18(22.86mm,4.445mm) on Multi-Layer And Pad J3-20(22.86mm,5.715mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3269.375mil|Location2.Y=3280.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=3269.375mil|Location2.Y=3280.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-19(21.59mm,5.715mm) on Multi-Layer And Pad J3-20(22.86mm,5.715mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2844.375mil|Location2.Y=2855.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2844.375mil|Location2.Y=2855.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-2(22.86mm,-5.715mm) on Multi-Layer And Pad J3-4(22.86mm,-4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2869.375mil|Location2.Y=2880.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2869.375mil|Location2.Y=2880.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-3(21.59mm,-4.445mm) on Multi-Layer And Pad J3-4(22.86mm,-4.445mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-3(21.59mm,-4.445mm) on Multi-Layer And Pad J3-5(21.59mm,-3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2894.375mil|Location2.Y=2905.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-4(22.86mm,-4.445mm) on Multi-Layer And Pad J3-6(22.86mm,-3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2919.375mil|Location2.Y=2930.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2919.375mil|Location2.Y=2930.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-5(21.59mm,-3.175mm) on Multi-Layer And Pad J3-6(22.86mm,-3.175mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2944.375mil|Location2.Y=2955.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2944.375mil|Location2.Y=2955.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-5(21.59mm,-3.175mm) on Multi-Layer And Pad J3-7(21.59mm,-1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2944.375mil|Location2.Y=2955.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.375mil|Location2.X=4870.625mil|Location1.Y=2944.375mil|Location2.Y=2955.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-6(22.86mm,-3.175mm) on Multi-Layer And Pad J3-8(22.86mm,-1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2969.375mil|Location2.Y=2980.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4834.374mil|Location2.X=4845.624mil|Location1.Y=2969.375mil|Location2.Y=2980.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-7(21.59mm,-1.905mm) on Multi-Layer And Pad J3-8(22.86mm,-1.905mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4809.375mil|Location2.X=4820.625mil|Location1.Y=2994.375mil|Location2.Y=3005.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J3-7(21.59mm,-1.905mm) on Multi-Layer And Pad J3-9(21.59mm,-0.635mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3706.619mil|Location2.X=3717.869mil|Location1.Y=2229.498mil|Location2.Y=2240.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3706.619mil|Location2.X=3717.869mil|Location1.Y=2229.498mil|Location2.Y=2240.748mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.147mm &lt; 0.254mm) Between Pad J4-(-7.305mm,-20.701mm) on Multi-Layer And Pad J4-1(-5.715mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.147mm] / [Bottom Solder] Mask Sliver [0.147mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3734.375mil|Location2.X=3745.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3734.375mil|Location2.X=3745.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-1(-5.715mm,-20.066mm) on Multi-Layer And Pad J4-2(-5.715mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-1(-5.715mm,-20.066mm) on Multi-Layer And Pad J4-3(-4.445mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-10(-0.635mm,-21.336mm) on Multi-Layer And Pad J4-12(0.635mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-10(-0.635mm,-21.336mm) on Multi-Layer And Pad J4-8(-1.905mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.375mil|Location2.X=3945.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.375mil|Location2.X=3945.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-10(-0.635mm,-21.336mm) on Multi-Layer And Pad J4-9(-0.635mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.375mil|Location2.X=3995.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.375mil|Location2.X=3995.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-11(0.635mm,-20.066mm) on Multi-Layer And Pad J4-12(0.635mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-11(0.635mm,-20.066mm) on Multi-Layer And Pad J4-13(1.905mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3959.374mil|Location2.X=3970.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-11(0.635mm,-20.066mm) on Multi-Layer And Pad J4-9(-0.635mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4009.374mil|Location2.X=4020.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-12(0.635mm,-21.336mm) on Multi-Layer And Pad J4-14(1.905mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4034.375mil|Location2.X=4045.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4034.375mil|Location2.X=4045.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-13(1.905mm,-20.066mm) on Multi-Layer And Pad J4-14(1.905mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-13(1.905mm,-20.066mm) on Multi-Layer And Pad J4-15(3.175mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4059.374mil|Location2.X=4070.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-14(1.905mm,-21.336mm) on Multi-Layer And Pad J4-16(3.175mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4084.375mil|Location2.X=4095.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4084.375mil|Location2.X=4095.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-15(3.175mm,-20.066mm) on Multi-Layer And Pad J4-16(3.175mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-15(3.175mm,-20.066mm) on Multi-Layer And Pad J4-17(4.445mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4109.374mil|Location2.X=4120.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-16(3.175mm,-21.336mm) on Multi-Layer And Pad J4-18(4.445mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4134.375mil|Location2.X=4145.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4134.375mil|Location2.X=4145.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-17(4.445mm,-20.066mm) on Multi-Layer And Pad J4-18(4.445mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-17(4.445mm,-20.066mm) on Multi-Layer And Pad J4-19(5.715mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4159.374mil|Location2.X=4170.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-18(4.445mm,-21.336mm) on Multi-Layer And Pad J4-20(5.715mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.375mil|Location2.X=4195.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4184.375mil|Location2.X=4195.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-19(5.715mm,-20.066mm) on Multi-Layer And Pad J4-20(5.715mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3759.374mil|Location2.X=3770.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-2(-5.715mm,-21.336mm) on Multi-Layer And Pad J4-4(-4.445mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3784.375mil|Location2.X=3795.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3784.375mil|Location2.X=3795.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-3(-4.445mm,-20.066mm) on Multi-Layer And Pad J4-4(-4.445mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-3(-4.445mm,-20.066mm) on Multi-Layer And Pad J4-5(-3.175mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.374mil|Location2.X=3820.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-4(-4.445mm,-21.336mm) on Multi-Layer And Pad J4-6(-3.175mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3834.375mil|Location2.X=3845.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3834.375mil|Location2.X=3845.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-5(-3.175mm,-20.066mm) on Multi-Layer And Pad J4-6(-3.175mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-5(-3.175mm,-20.066mm) on Multi-Layer And Pad J4-7(-1.905mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.374mil|Location2.X=3870.624mil|Location1.Y=2204.375mil|Location2.Y=2215.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-6(-3.175mm,-21.336mm) on Multi-Layer And Pad J4-8(-1.905mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3884.375mil|Location2.X=3895.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3884.375mil|Location2.X=3895.625mil|Location1.Y=2229.375mil|Location2.Y=2240.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-7(-1.905mm,-20.066mm) on Multi-Layer And Pad J4-8(-1.905mm,-21.336mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Universit%C3%A9 Laval\Github\design3\%C3%89lectronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Thermistors Board\2 Layers Matrix.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3909.374mil|Location2.X=3920.624mil|Location1.Y=2254.375mil|Location2.Y=2265.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.007mm &lt; 0.254mm) Between Pad J4-7(-1.905mm,-20.066mm) on Multi-Layer And Pad J4-9(-0.635mm,-20.066mm) on Multi-Layer [Top Solder] Mask Sliver [0.007mm] / [Bottom Solder] Mask Sliver [0.007mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
