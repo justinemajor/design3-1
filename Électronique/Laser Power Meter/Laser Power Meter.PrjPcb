@@ -390,23 +390,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document21]
-DocumentPath=Wheatstone bridge part III (Main).Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document22]
 DocumentPath=Laser Power Meter.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +406,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=2 Layers PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +423,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BWCTGYMI
 
-[Document24]
+[Document23]
 DocumentPath=Wheatstone bridge part II (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,8 +440,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=Arduino.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document25]
+DocumentPath=Wheatstone bridge part III (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -479,112 +479,112 @@ DocumentPath=Project Outputs\Design Rule Check - 2 Layers PCB.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Units
-Value=mm
+Name=Author
+Value=Maxime Tousignant-Tremblay
 
 [Parameter2]
-Name=SheetNumber
-Value==SheetNumber
+Name=CAGE_CODE
+Value=?????
 
 [Parameter3]
-Name=SCH_REV
-Value=A
+Name=CONTRACT_NUMBER
+Value=<CONTRACT NO>
 
 [Parameter4]
-Name=PCB_REV
-Value=A
+Name=CourseID
+Value=GPH-3110
 
 [Parameter5]
-Name=PCB_PART_NUMBER
-Value=<PCB PN>
+Name=DOC_NO_ASSY_DWG
+Value=<ASSY DWG NO>
 
 [Parameter6]
-Name=PCB_ENGINEER_APP_DATE
-Value=--/--/----
+Name=DOC_NO_BOM
+Value=<BOM DOC NO>
 
 [Parameter7]
-Name=PCB_ENGINEER
-Value=- -----
+Name=DOC_NO_FAB_DWG
+Value=<FAB DWG NO>
 
 [Parameter8]
-Name=PCB_DWG_NO
-Value=<PCB DWG NO>
+Name=DOC_NO_SCH_DWG
+Value=<SCH DWG NO>
 
 [Parameter9]
-Name=PCB_DESIGNER_APP_DATE
-Value=--/--/----
+Name=DrawnBy
+Value=Maxime Tousignant-Tremblay
 
 [Parameter10]
-Name=PCB_DESIGNER
-Value=- -----
+Name=ID Number
+Value=536 772 369
 
 [Parameter11]
-Name=PCB_CHECKER_APP_DATE
-Value=--/--/----
+Name=IDUL
+Value=MATOT9
 
 [Parameter12]
-Name=PCB_CHECKER
-Value=- -----
+Name=PCB_2_DEC_TOL
+Value=+/-.01
 
 [Parameter13]
-Name=PCB_ASSEMBLY_NO
-Value=<PCB ASSY NO>
+Name=PCB_3_DEC_TOL
+Value=+/-.010
 
 [Parameter14]
 Name=PCB_ANG_TOL
 Value=+/-1/2
 
 [Parameter15]
-Name=PCB_3_DEC_TOL
-Value=+/-.010
+Name=PCB_ASSEMBLY_NO
+Value=<PCB ASSY NO>
 
 [Parameter16]
-Name=PCB_2_DEC_TOL
-Value=+/-.01
+Name=PCB_CHECKER
+Value=- -----
 
 [Parameter17]
-Name=IDUL
-Value=MATOT9
+Name=PCB_CHECKER_APP_DATE
+Value=--/--/----
 
 [Parameter18]
-Name=ID Number
-Value=536 772 369
+Name=PCB_DESIGNER
+Value=- -----
 
 [Parameter19]
-Name=DrawnBy
-Value=Maxime Tousignant-Tremblay
+Name=PCB_DESIGNER_APP_DATE
+Value=--/--/----
 
 [Parameter20]
-Name=DOC_NO_SCH_DWG
-Value=<SCH DWG NO>
+Name=PCB_DWG_NO
+Value=<PCB DWG NO>
 
 [Parameter21]
-Name=DOC_NO_FAB_DWG
-Value=<FAB DWG NO>
+Name=PCB_ENGINEER
+Value=- -----
 
 [Parameter22]
-Name=DOC_NO_BOM
-Value=<BOM DOC NO>
+Name=PCB_ENGINEER_APP_DATE
+Value=--/--/----
 
 [Parameter23]
-Name=DOC_NO_ASSY_DWG
-Value=<ASSY DWG NO>
+Name=PCB_PART_NUMBER
+Value=<PCB PN>
 
 [Parameter24]
-Name=CourseID
-Value=GPH-3110
+Name=PCB_REV
+Value=A
 
 [Parameter25]
-Name=CONTRACT_NUMBER
-Value=<CONTRACT NO>
+Name=SCH_REV
+Value=A
 
 [Parameter26]
-Name=CAGE_CODE
-Value=?????
+Name=SheetNumber
+Value==SheetNumber
 
 [Parameter27]
-Name=Author
-Value=Maxime Tousignant-Tremblay
+Name=Units
+Value=mm
 
 [Configuration1]
 Name=Default Configuration
