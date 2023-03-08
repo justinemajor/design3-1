@@ -4,5 +4,13 @@ Version=1.0
 ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
 [Project2]
 ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
+[Project3]
+ProjectPath=Power Meter Assembly\Power Meter Assembly.PrjMbd
 [Project4]
-ProjectPath=Laser Power Meter V2\Power Meter Assembly.PrjMbd
+ProjectPath=Embeded MCU\Embeded MCU.PrjPcb
+[Project5]
+ProjectPath=..\..\..\GPH\Datasheets\Arduino\Nano every\PCB\Imported NANOEveryV3.0.PrjPcb\NANOEveryV3.0.PrjPcb
+[Project6]
+ProjectPath=Arduino Nano Every\Arduino Nano Every.PrjPcb
+[Project7]
+ProjectPath=..\..\..\GPH\Datasheets\Arduino\MKR Zero\CAD\Imported MKRZero_V5.0.PrjPcb\MKRZero_V5.0.PrjPcb

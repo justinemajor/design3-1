@@ -1,5 +1,5 @@
-Record=TopLevelDocument|FileName=Power Supply Unit.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Processing interface.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridge part I.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridge part II.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Power Supply Unit.SchDoc|FileName=Weatstone bridge part III.SchDoc|SheetNumber=5
+Record=TopLevelDocument|FileName=Arduino.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Arduino.SchDoc|FileName=Power Supply Unit (Main).SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Arduino.SchDoc|FileName=Wheatstone bridge part I (Main).SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Arduino.SchDoc|FileName=Wheatstone bridge part II (Main).SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Arduino.SchDoc|FileName=Wheatstone bridge part III (Main).SchDoc|SheetNumber=5

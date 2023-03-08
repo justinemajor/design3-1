@@ -119,6 +119,8 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=Laser Power Meter.PrjPcb
+VaultURL=
+VaultName=
 
 [Document5]
 DocumentPath=..\Thermistors Board\Thermistors Board.PrjPcb
@@ -140,6 +142,29 @@ VaultGUID=
 ManagedProjectGUID=
 RevisionGUID=
 ProjectName=Thermistors Board.PrjPcb
+VaultURL=
+VaultName=
+
+[Document6]
+DocumentPath=..\Embeded MCU\Embeded MCU.PrjPcb
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+VaultGUID=
+ManagedProjectGUID=
+RevisionGUID=
+ProjectName=Embeded MCU.PrjPcb
 
 [Parameter1]
 Name=Author
