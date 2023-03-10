@@ -50,6 +50,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=Final board.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OSIWCYJK
+
+[Document2]
 DocumentPath=Arduino.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -66,7 +83,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CJHNTGTK
 
-[Document2]
+[Document3]
 DocumentPath=..\..\..\..\GPH\Datasheets\Connectors\Headers\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290\SAMTEC_MTMM-110-07-G-D-290.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OCKUQFLX
 
-[Document3]
+[Document4]
 DocumentPath=..\..\..\..\GPH\Datasheets\Connectors\Headers\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TNDLGEBE
 
-[Document4]
+[Document5]
 DocumentPath=Motherboard.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQLWLSMD
 
-[Document5]
+[Document6]
 DocumentPath=Libraries\ATSAMDA1E15B-ABT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TDOOHTCW
 
-[Document6]
+[Document7]
 DocumentPath=Libraries\ATSAMDA1E15B-ABT.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QDNYQSUL
 
-[Document7]
+[Document8]
 DocumentPath=4 Layers PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IDRKTLYW
 
-[Document8]
+[Document9]
 DocumentPath=Libraries\MCP1501T-18E_CHY.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AKBVULYH
 
-[Document9]
+[Document10]
 DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
-[Document10]
+[Document11]
 DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
-[Document11]
+[Document12]
 DocumentPath=Libraries\ULaval Title Block.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YOUTGPEY
 
-[Document12]
+[Document13]
 DocumentPath=Power Supply Unit (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SEIOAEZJ
 
-[Document13]
+[Document14]
 DocumentPath=Wheatstone bridge part I (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PPHGJKSC
 
-[Document14]
+[Document15]
 DocumentPath=Wheatstone bridge part II (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +304,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KKGMJUNX
 
-[Document15]
+[Document16]
 DocumentPath=Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document17]
 DocumentPath=Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document18]
 DocumentPath=Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +355,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document19]
 DocumentPath=ActiveBOM.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document20]
 DocumentPath=Wheatstone bridge part III (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +389,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XNSHJLBQ
 
-[Document20]
+[Document21]
 DocumentPath=Wheatstone bridge part I (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,7 +406,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document22]
 DocumentPath=Laser Power Meter.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -406,7 +423,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document23]
 DocumentPath=2 Layers PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +440,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BWCTGYMI
 
-[Document23]
+[Document24]
 DocumentPath=Wheatstone bridge part II (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +457,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document25]
 DocumentPath=Arduino.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +474,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document26]
 DocumentPath=Wheatstone bridge part III (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1673,9 +1690,9 @@ UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=ATSAMDA1E15B-ABT.SchLib
-ComponentDesignItemID0=ATSAMDA1E15B-ABT
-ComponentSymbolReference0=ATSAMDA1E15B-ABT
+ComponentLibraryIdentifier0=Design III Symbols.IntLib
+ComponentDesignItemID0=MUX Analog 8:1
+ComponentSymbolReference0=MUX Analog 8:1
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1695,28 +1712,30 @@ ParameterName0=Comment
 ParameterUpdate0=1
 ParameterName1=Component Kind
 ParameterUpdate1=1
-ParameterName2=Copyright
+ParameterName2=ComponentLink1Description
 ParameterUpdate2=1
-ParameterName3=Description
+ParameterName3=ComponentLink1URL
 ParameterUpdate3=1
-ParameterName4=Library Reference
+ParameterName4=Description
 ParameterUpdate4=1
-ParameterName5=Manufacturer_Part_Number
+ParameterName5=Library Reference
 ParameterUpdate5=1
-ParameterName6=Mfr_Name
+ParameterName6=Supplier 1
 ParameterUpdate6=1
-ParameterName7=RefDes
+ParameterName7=Supplier 2
 ParameterUpdate7=1
-ParameterName8=Supplier 1
+ParameterName8=Supplier 3
 ParameterUpdate8=1
 ParameterName9=Supplier Part Number 1
 ParameterUpdate9=1
-ParameterName10=Type
+ParameterName10=Supplier Part Number 2
 ParameterUpdate10=1
+ParameterName11=Supplier Part Number 3
+ParameterUpdate11=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=TQFP32_MC_MCH-M
+ModelName0=TMUX1208PWR
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
@@ -1736,31 +1755,31 @@ ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=0|Use
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
 Configuration_Name1=OutputConfigurationParameter1
-Configuration_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name2=OutputConfigurationParameter2
-Configuration_Item2=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Multilayer Composite Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item2=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Multilayer Composite Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name3=OutputConfigurationParameter3
-Configuration_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name4=OutputConfigurationParameter4
-Configuration_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name5=OutputConfigurationParameter5
-Configuration_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name6=OutputConfigurationParameter6
-Configuration_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name7=OutputConfigurationParameter7
-Configuration_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name8=OutputConfigurationParameter8
-Configuration_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name9=OutputConfigurationParameter9
-Configuration_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical3|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical3|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name10=OutputConfigurationParameter10
-Configuration_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical4|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical4|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name11=OutputConfigurationParameter11
-Configuration_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name12=OutputConfigurationParameter12
-Configuration_Item12=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item12=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name13=OutputConfigurationParameter13
-Configuration_Item13=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item13=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 Configuration_Name14=OutputConfigurationParameter14
-Configuration_Item14=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical16|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\PCB.PcbDoc
+Configuration_Item14=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical16|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\2 Layers PCB.PcbDoc
 

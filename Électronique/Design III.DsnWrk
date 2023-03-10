@@ -1,16 +1,14 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
-[Project2]
-ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
-[Project3]
-ProjectPath=Power Meter Assembly\Power Meter Assembly.PrjMbd
-[Project4]
-ProjectPath=Embeded MCU\Embeded MCU.PrjPcb
-[Project5]
-ProjectPath=..\..\..\GPH\Datasheets\Arduino\Nano every\PCB\Imported NANOEveryV3.0.PrjPcb\NANOEveryV3.0.PrjPcb
-[Project6]
 ProjectPath=Arduino Nano Every\Arduino Nano Every.PrjPcb
-[Project7]
+[Project2]
 ProjectPath=..\..\..\GPH\Datasheets\Arduino\MKR Zero\CAD\Imported MKRZero_V5.0.PrjPcb\MKRZero_V5.0.PrjPcb
+[Project3]
+ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
+[Project4]
+ProjectPath=Design III Symbols.LibPkg
+[Project5]
+ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
+[Project8]
+ProjectPath=..\..\..\..\Desktop\2023-03-09_20-11-48\BPW34.LibPkg
