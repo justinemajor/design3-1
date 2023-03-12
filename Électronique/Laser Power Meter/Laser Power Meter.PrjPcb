@@ -496,112 +496,112 @@ DocumentPath=Project Outputs\Design Rule Check - 2 Layers PCB.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Author
-Value=Maxime Tousignant-Tremblay
+Name=Units
+Value=mm
 
 [Parameter2]
-Name=CAGE_CODE
-Value=?????
+Name=SheetNumber
+Value==SheetNumber
 
 [Parameter3]
-Name=CONTRACT_NUMBER
-Value=<CONTRACT NO>
+Name=SCH_REV
+Value=A
 
 [Parameter4]
-Name=CourseID
-Value=GPH-3110
+Name=PCB_REV
+Value=A
 
 [Parameter5]
-Name=DOC_NO_ASSY_DWG
-Value=<ASSY DWG NO>
+Name=PCB_PART_NUMBER
+Value=<PCB PN>
 
 [Parameter6]
-Name=DOC_NO_BOM
-Value=<BOM DOC NO>
+Name=PCB_ENGINEER_APP_DATE
+Value=--/--/----
 
 [Parameter7]
-Name=DOC_NO_FAB_DWG
-Value=<FAB DWG NO>
+Name=PCB_ENGINEER
+Value=- -----
 
 [Parameter8]
-Name=DOC_NO_SCH_DWG
-Value=<SCH DWG NO>
+Name=PCB_DWG_NO
+Value=<PCB DWG NO>
 
 [Parameter9]
-Name=DrawnBy
-Value=Maxime Tousignant-Tremblay
+Name=PCB_DESIGNER_APP_DATE
+Value=--/--/----
 
 [Parameter10]
-Name=ID Number
-Value=536 772 369
+Name=PCB_DESIGNER
+Value=- -----
 
 [Parameter11]
-Name=IDUL
-Value=MATOT9
+Name=PCB_CHECKER_APP_DATE
+Value=--/--/----
 
 [Parameter12]
-Name=PCB_2_DEC_TOL
-Value=+/-.01
+Name=PCB_CHECKER
+Value=- -----
 
 [Parameter13]
-Name=PCB_3_DEC_TOL
-Value=+/-.010
+Name=PCB_ASSEMBLY_NO
+Value=<PCB ASSY NO>
 
 [Parameter14]
 Name=PCB_ANG_TOL
 Value=+/-1/2
 
 [Parameter15]
-Name=PCB_ASSEMBLY_NO
-Value=<PCB ASSY NO>
+Name=PCB_3_DEC_TOL
+Value=+/-.010
 
 [Parameter16]
-Name=PCB_CHECKER
-Value=- -----
+Name=PCB_2_DEC_TOL
+Value=+/-.01
 
 [Parameter17]
-Name=PCB_CHECKER_APP_DATE
-Value=--/--/----
+Name=IDUL
+Value=MATOT9
 
 [Parameter18]
-Name=PCB_DESIGNER
-Value=- -----
+Name=ID Number
+Value=536 772 369
 
 [Parameter19]
-Name=PCB_DESIGNER_APP_DATE
-Value=--/--/----
+Name=DrawnBy
+Value=Maxime Tousignant-Tremblay
 
 [Parameter20]
-Name=PCB_DWG_NO
-Value=<PCB DWG NO>
+Name=DOC_NO_SCH_DWG
+Value=<SCH DWG NO>
 
 [Parameter21]
-Name=PCB_ENGINEER
-Value=- -----
+Name=DOC_NO_FAB_DWG
+Value=<FAB DWG NO>
 
 [Parameter22]
-Name=PCB_ENGINEER_APP_DATE
-Value=--/--/----
+Name=DOC_NO_BOM
+Value=<BOM DOC NO>
 
 [Parameter23]
-Name=PCB_PART_NUMBER
-Value=<PCB PN>
+Name=DOC_NO_ASSY_DWG
+Value=<ASSY DWG NO>
 
 [Parameter24]
-Name=PCB_REV
-Value=A
+Name=CourseID
+Value=GPH-3110
 
 [Parameter25]
-Name=SCH_REV
-Value=A
+Name=CONTRACT_NUMBER
+Value=<CONTRACT NO>
 
 [Parameter26]
-Name=SheetNumber
-Value==SheetNumber
+Name=CAGE_CODE
+Value=?????
 
 [Parameter27]
-Name=Units
-Value=mm
+Name=Author
+Value=Maxime Tousignant-Tremblay
 
 [Configuration1]
 Name=Default Configuration
@@ -1691,8 +1691,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Design III Symbols.IntLib
-ComponentDesignItemID0=MUX Analog 8:1
-ComponentSymbolReference0=MUX Analog 8:1
+ComponentDesignItemID0=Test Point
+ComponentSymbolReference0=Test Point
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1712,31 +1712,21 @@ ParameterName0=Comment
 ParameterUpdate0=1
 ParameterName1=Component Kind
 ParameterUpdate1=1
-ParameterName2=ComponentLink1Description
+ParameterName2=Description
 ParameterUpdate2=1
-ParameterName3=ComponentLink1URL
+ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Description
-ParameterUpdate4=1
-ParameterName5=Library Reference
-ParameterUpdate5=1
-ParameterName6=Supplier 1
-ParameterUpdate6=1
-ParameterName7=Supplier 2
-ParameterUpdate7=1
-ParameterName8=Supplier 3
-ParameterUpdate8=1
-ParameterName9=Supplier Part Number 1
-ParameterUpdate9=1
-ParameterName10=Supplier Part Number 2
-ParameterUpdate10=1
-ParameterName11=Supplier Part Number 3
-ParameterUpdate11=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=TMUX1208PWR
+ModelName0=SQ Pad
 ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=Test Point Loop
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=Test Point Loop +18AWG
+ModelUpdate2=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

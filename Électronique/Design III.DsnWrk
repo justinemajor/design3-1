@@ -1,14 +1,12 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=Arduino Nano Every\Arduino Nano Every.PrjPcb
-[Project2]
 ProjectPath=..\..\..\GPH\Datasheets\Arduino\MKR Zero\CAD\Imported MKRZero_V5.0.PrjPcb\MKRZero_V5.0.PrjPcb
-[Project3]
+[Project2]
 ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
-[Project4]
+[Project3]
 ProjectPath=Design III Symbols.LibPkg
-[Project5]
+[Project4]
 ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
-[Project8]
-ProjectPath=..\..\..\..\Desktop\2023-03-09_20-11-48\BPW34.LibPkg
+[Project6]
+ProjectPath=..\..\..\GPH\Datasheets\Hardware\Slide Switch\2023-03-12_00-09-03\EG1218.LibPkg
