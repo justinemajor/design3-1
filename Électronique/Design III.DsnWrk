@@ -8,5 +8,3 @@ ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
 ProjectPath=Design III Symbols.LibPkg
 [Project4]
 ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
-[Project6]
-ProjectPath=..\..\..\GPH\Datasheets\Hardware\Slide Switch\2023-03-12_00-09-03\EG1218.LibPkg
