@@ -50,7 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Final board.PcbDoc
+DocumentPath=6 Layers.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -64,7 +64,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=OSIWCYJK
+DocumentUniqueId=CWLRGOVL
 
 [Document2]
 DocumentPath=Arduino.SchDoc
@@ -84,40 +84,6 @@ GenerateClassCluster=0
 DocumentUniqueId=CJHNTGTK
 
 [Document3]
-DocumentPath=..\..\..\..\GPH\Datasheets\Connectors\Headers\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290\SAMTEC_MTMM-110-07-G-D-290.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=OCKUQFLX
-
-[Document4]
-DocumentPath=..\..\..\..\GPH\Datasheets\Connectors\Headers\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290\MTMM-110-07-G-D-290.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TNDLGEBE
-
-[Document5]
 DocumentPath=Motherboard.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,109 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQLWLSMD
 
-[Document6]
-DocumentPath=Libraries\ATSAMDA1E15B-ABT.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TDOOHTCW
-
-[Document7]
-DocumentPath=Libraries\ATSAMDA1E15B-ABT.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=QDNYQSUL
-
-[Document8]
-DocumentPath=4 Layers PCB.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IDRKTLYW
-
-[Document9]
-DocumentPath=Libraries\MCP1501T-18E_CHY.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=AKBVULYH
-
-[Document10]
-DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NGLTGAHM
-
-[Document11]
-DocumentPath=..\..\..\..\..\Documents\AltiumLL\SamacSys.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MPRJBCLL
-
-[Document12]
+[Document4]
 DocumentPath=Libraries\ULaval Title Block.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YOUTGPEY
 
-[Document13]
+[Document5]
 DocumentPath=Power Supply Unit (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SEIOAEZJ
 
-[Document14]
+[Document6]
 DocumentPath=Wheatstone bridge part I (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PPHGJKSC
 
-[Document15]
+[Document7]
 DocumentPath=Wheatstone bridge part II (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KKGMJUNX
 
-[Document16]
+[Document8]
 DocumentPath=Assembly.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document9]
 DocumentPath=Documentation.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document10]
 DocumentPath=Fabrication.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document11]
 DocumentPath=ActiveBOM.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document12]
 DocumentPath=Wheatstone bridge part III (Main).SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XNSHJLBQ
 
-[Document21]
+[Document13]
 DocumentPath=Wheatstone bridge part I (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -406,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document14]
 DocumentPath=Laser Power Meter.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document15]
 DocumentPath=2 Layers PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +304,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BWCTGYMI
 
-[Document24]
+[Document16]
 DocumentPath=Wheatstone bridge part II (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document17]
 DocumentPath=Arduino.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -474,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document18]
 DocumentPath=Wheatstone bridge part III (Main).Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1691,28 +1555,10 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Design III Symbols.IntLib
-ComponentDesignItemID0=LED Green 3mm Vertical
-ComponentSymbolReference0=LED Green 3mm Vertical
-ComponentUpdate0=0
+ComponentDesignItemID0=Cap Ceramic 0.1 uF SMT 0603
+ComponentSymbolReference0=Cap Ceramic 0.1 uF SMT 0603
+ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=Design III Symbols.IntLib
-ComponentDesignItemID1=Res 2K61 1% SMT 0603
-ComponentSymbolReference1=Res 2K61 1% SMT 0603
-ComponentUpdate1=0
-ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=Design III Symbols.IntLib
-ComponentDesignItemID2=Res 4K64 1% SMT 0603
-ComponentSymbolReference2=Res 4K64 1% SMT 0603
-ComponentUpdate2=0
-ComponentIsDeviceSheet2=0
-ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=Design III Symbols.IntLib
-ComponentDesignItemID3=Schottky Diode 30V
-ComponentSymbolReference3=Schottky Diode 30V
-ComponentUpdate3=1
-ComponentIsDeviceSheet3=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1726,113 +1572,81 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Capacitance @ Vr, F
+ParameterName0=Applications
 ParameterUpdate0=1
-ParameterName1=Comment
+ParameterName1=Capacitance
 ParameterUpdate1=1
-ParameterName2=Component Kind
+ParameterName2=Comment
 ParameterUpdate2=1
-ParameterName3=ComponentLink1Description
+ParameterName3=Component Kind
 ParameterUpdate3=1
-ParameterName4=ComponentLink1URL
+ParameterName4=componentlink1description
 ParameterUpdate4=1
-ParameterName5=ComponentLink2Description
+ParameterName5=componentlink1url
 ParameterUpdate5=1
-ParameterName6=ComponentLink2URL
+ParameterName6=componentlink2description
 ParameterUpdate6=1
-ParameterName7=Composition
+ParameterName7=componentlink2url
 ParameterUpdate7=1
-ParameterName8=Current - Average Rectified (Io)
+ParameterName8=Description
 ParameterUpdate8=1
-ParameterName9=Current - Reverse Leakage @ Vr
+ParameterName9=Device Package
 ParameterUpdate9=1
-ParameterName10=Description
+ParameterName10=lastupdated
 ParameterUpdate10=1
-ParameterName11=Device Package
+ParameterName11=Library Reference
 ParameterUpdate11=1
-ParameterName12=Diode Type
+ParameterName12=Lifecycle Status
 ParameterUpdate12=1
-ParameterName13=Features
+ParameterName13=manufacturer
 ParameterUpdate13=1
-ParameterName14=Height - Seated (Max)
+ParameterName14=Minimum Order
 ParameterUpdate14=1
-ParameterName15=LastUpdated
+ParameterName15=Mounting Type
 ParameterUpdate15=1
-ParameterName16=Library Reference
+ParameterName16=Operating Temperature
 ParameterUpdate16=1
-ParameterName17=Lifecycle Status
+ParameterName17=Package / Case
 ParameterUpdate17=1
-ParameterName18=Manufacturer
+ParameterName18=packaging
 ParameterUpdate18=1
-ParameterName19=Minimum Order
+ParameterName19=Part Number
 ParameterUpdate19=1
-ParameterName20=Mounting Type
+ParameterName20=Part Status
 ParameterUpdate20=1
-ParameterName21=Number of Terminations
+ParameterName21=partid
 ParameterUpdate21=1
-ParameterName22=Operating Temperature
+ParameterName22=price
 ParameterUpdate22=1
-ParameterName23=Operating Temperature - Junction
+ParameterName23=series
 ParameterUpdate23=1
-ParameterName24=Operating Voltage
+ParameterName24=Size / Dimension
 ParameterUpdate24=1
-ParameterName25=Package / Case
+ParameterName25=Supplier 1
 ParameterUpdate25=1
-ParameterName26=Packaging
+ParameterName26=Supplier 2
 ParameterUpdate26=1
-ParameterName27=Part Number
+ParameterName27=Supplier 3
 ParameterUpdate27=1
-ParameterName28=Part Status
+ParameterName28=Supplier Part Number 1
 ParameterUpdate28=1
-ParameterName29=PartId
+ParameterName29=Supplier Part Number 2
 ParameterUpdate29=1
-ParameterName30=Power (Watts)
+ParameterName30=Supplier Part Number 3
 ParameterUpdate30=1
-ParameterName31=Price
+ParameterName31=Temperature Coefficient
 ParameterUpdate31=1
-ParameterName32=Resistance
+ParameterName32=Thickness (Max)
 ParameterUpdate32=1
-ParameterName33=Series
+ParameterName33=Tolerance
 ParameterUpdate33=1
-ParameterName34=Size / Dimension
+ParameterName34=Voltage - Rated
 ParameterUpdate34=1
-ParameterName35=Speed
-ParameterUpdate35=1
-ParameterName36=Supplier 1
-ParameterUpdate36=1
-ParameterName37=Supplier 2
-ParameterUpdate37=1
-ParameterName38=Supplier 3
-ParameterUpdate38=1
-ParameterName39=Supplier Device Package
-ParameterUpdate39=1
-ParameterName40=Supplier Part Number 1
-ParameterUpdate40=1
-ParameterName41=Supplier Part Number 2
-ParameterUpdate41=1
-ParameterName42=Supplier Part Number 3
-ParameterUpdate42=1
-ParameterName43=Temperature Coefficient
-ParameterUpdate43=1
-ParameterName44=Tolerance
-ParameterUpdate44=1
-ParameterName45=Value
-ParameterUpdate45=1
-ParameterName46=Voltage - DC Reverse (Vr) (Max)
-ParameterUpdate46=1
-ParameterName47=Voltage - Forward (Vf) (Max) @ If
-ParameterUpdate47=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=Led 3 mm Vertical Clear
+ModelName0=Cap Ceramic 0.1 uF 50V SMT 0603
 ModelUpdate0=1
-ModelType1=PCBLIB
-ModelName1=Resistor Yaego SMT 0603
-ModelUpdate1=1
-ModelType2=PCBLIB
-ModelName2=Schottky Diode 30V SMT
-ModelUpdate2=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
