@@ -1,0 +1,10 @@
+Output: IPC-D-356 Netlist
+Type  : Test Points
+From  : Variant [[No Variations]] of PCB Document [Thermistors Board V2.PcbDoc]
+   Generated File[_PCB PN_.ipc]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 17:07:43 On 2023-03-21

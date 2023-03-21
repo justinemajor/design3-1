@@ -1,0 +1,243 @@
+Board Information Report
+Filename     : C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\6 Layers Motherboard.PcbDoc
+Date         : 2023-03-19
+Time         : 17:48:12
+Time Elapsed : 00:00:01
+
+General
+    Board Size, 83.25mmx83.25mm
+    Components on board, 152
+count : 2
+
+Routing Information
+    Routing completion, 100,00%
+    Connections, 494
+    Connections routed, 494
+    Connections remaining, 0
+count : 4
+
+Layer, Arcs, Pads, Vias, Tracks, Texts, Fills, Regions, ComponentBodies
+    Top Layer, 0, 253, 0, 708, 0, 0, 0, 0
+    Int1 (GND), 0, 0, 0, 0, 0, 0, 2, 0
+    Int2 (Sign), 0, 0, 0, 115, 0, 0, 0, 0
+    Int3 (Sign), 0, 0, 0, 110, 0, 0, 0, 0
+    Int4 (PWR), 0, 0, 0, 0, 0, 0, 5, 0
+    Bottom Layer, 0, 276, 0, 690, 0, 0, 0, 0
+    Mechanical 1, 0, 0, 0, 0, 0, 0, 0, 0
+    Top 3D Body, 0, 0, 0, 16, 0, 0, 0, 4
+    Top Courtyard, 0, 0, 0, 196, 0, 0, 0, 4
+    Board, 0, 0, 0, 312, 0, 0, 0, 80
+    Top Assembly, 0, 0, 0, 188, 0, 0, 3, 4
+    Top Designator, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Designator, 0, 0, 0, 0, 0, 0, 0, 0
+    Top Component Outline, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Component Outline, 0, 0, 0, 0, 0, 0, 0, 0
+    Mechanical 13, 23, 0, 0, 160, 0, 0, 0, 26
+    Mechanical 15, 1, 0, 0, 205, 1, 0, 5, 0
+    Top Component Center, 0, 0, 0, 102, 0, 0, 0, 0
+    Bottom Assembly, 0, 0, 0, 176, 0, 0, 2, 3
+    Bottom Courtyard, 0, 0, 0, 168, 0, 0, 0, 0
+    Bottom 3D Body, 0, 0, 0, 20, 0, 0, 0, 5
+    Bottom Component Center, 0, 0, 0, 92, 0, 0, 0, 0
+    Multi-Layer, 0, 125, 174, 0, 0, 0, 1, 0
+    Top Paste, 0, 0, 0, 0, 0, 4, 0, 0
+    Top Overlay, 34, 0, 0, 440, 161, 0, 0, 0
+    Top Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Solder, 0, 0, 0, 0, 0, 0, 0, 0
+    Bottom Overlay, 35, 0, 0, 426, 166, 0, 0, 0
+    Bottom Paste, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Guide, 0, 0, 0, 0, 0, 0, 0, 0
+    Keep-Out Layer, 0, 0, 0, 0, 0, 0, 0, 0
+    Drill Drawing, 0, 0, 0, 0, 0, 0, 0, 0
+count : 32
+
+Drill Pairs, Vias
+    Top Layer - Bottom Layer, 174
+count : 1
+
+Layer, Sq.In., Sq.MM., Percent of layer
+    Top Layer, 1,375, 887,02, 16%
+    Int1 (GND), 7,762, 5007,887, 92%
+    Int2 (Sign), 0,786, 507,206, 9%
+    Int3 (Sign), 0,755, 487,157, 9%
+    Int4 (PWR), 7,726, 4984,804, 92%
+    Bottom Layer, 1,358, 875,98, 16%
+count : 6
+
+Non-Plated Hole Size, Pads, Vias
+    0mm, 6, 0
+count : 1
+
+Plated Hole Size, Pads, Vias
+    0mm, 523, 0
+    0.3mm, 0, 108
+    0.4mm, 5, 0
+    0.5mm, 0, 66
+    0.7mm, 24, 0
+    0.8mm, 6, 0
+    0.9mm, 80, 0
+    1mm, 2, 0
+    2mm, 1, 0
+    3.2mm, 2, 0
+count : 10
+
+Non-Plated Slot Size / Length, Pads
+count : 0
+
+Plated Slot Size / Length, Pads
+    13.78mil / 53.15mil, 2
+    39.37mil / 98.425mil, 1
+    39.37mil / 110.236mil, 2
+count : 3
+
+Non-Plated Square Hole Size, Pads
+count : 0
+
+Plated Square Hole Size, Pads
+count : 0
+
+Top Layer Annular Ring Size, Count
+    0.4mm, 174
+    0.45mm, 1
+    0.5mm, 80
+    0.5mm, 4
+    0.6mm, 26
+    0.7mm, 6
+    1.2mm, 1
+    1.65mm, 2
+    2.6mm, 3
+    3.3mm, 2
+count : 10
+
+Mid Layer Annular Ring Size, Count
+    0.4mm, 174
+    0.45mm, 1
+    0.5mm, 80
+    0.5mm, 4
+    0.6mm, 26
+    0.7mm, 6
+    1.2mm, 1
+    1.65mm, 2
+    2.6mm, 3
+    3.3mm, 2
+count : 10
+
+Bottom Layer Annular Ring Size, Count
+    0.4mm, 174
+    0.45mm, 1
+    0.5mm, 80
+    0.5mm, 4
+    0.6mm, 26
+    0.7mm, 6
+    1.2mm, 1
+    1.65mm, 2
+    2.6mm, 3
+    3.3mm, 2
+count : 10
+
+Pad Solder Mask, Count
+    0mm, 357
+    0.05mm, 297
+count : 2
+
+Pad Paste Mask, Count
+    -1000mm, 4
+    0mm, 650
+count : 2
+
+Pad Pwr/Gnd Expansion, Count
+    0.508mm, 654
+count : 1
+
+Pad Relief Conductor Width, Count
+    0.254mm, 654
+count : 1
+
+Pad Relief Air Gap, Count
+    0.254mm, 654
+count : 1
+
+Pad Relief Entries, Count
+    4, 654
+count : 1
+
+Via Solder Mask, Count
+    0.05mm, 174
+count : 1
+
+Via Pwr/Gnd Expansion, Count
+    0.508mm, 174
+count : 1
+
+Track Width, Count
+    0.0254mm, 36
+    0.05mm, 96
+    0.1mm, 339
+    0.127mm, 12
+    0.15mm, 299
+    0.1524mm, 46
+    0.2mm, 2162
+    0.25mm, 250
+    0.3mm, 277
+    0.4mm, 140
+    0.5mm, 467
+count : 11
+
+Arc Line Width, Count
+    0mm, 6
+    0.1mm, 16
+    0.1524mm, 5
+    0.2mm, 11
+    0.25mm, 30
+    0.4mm, 8
+    0.5mm, 9
+    0.6mm, 8
+count : 8
+
+Arc Radius, Count
+    0.0381mm, 1
+    0.0762mm, 9
+    0.1mm, 8
+    0.125mm, 30
+    0.2mm, 8
+    0.25mm, 9
+    0.3mm, 8
+    0.3048mm, 1
+    0.5mm, 16
+    1.95mm, 2
+    2.4289mm, 1
+count : 11
+
+Arc Degrees, Count
+    100, 1
+    103, 1
+    180, 3
+    291, 1
+    360, 87
+count : 5
+
+Text Height, Count
+    0.635mm, 95
+    0.762mm, 1
+    1mm, 153
+    1.524mm, 57
+    2mm, 14
+    2.5mm, 8
+count : 6
+
+Text Width, Count
+    0.1mm, 95
+    0.1524mm, 1
+    0.16mm, 153
+    0.254mm, 61
+    0.3mm, 18
+count : 5
+
+Net Track Width, Count
+    0.2mm, 128
+    0.254mm, 2
+count : 2
+
+Net Via Size, Count
+    0.7mm, 130
+count : 1

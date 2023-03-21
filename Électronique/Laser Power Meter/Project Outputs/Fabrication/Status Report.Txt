@@ -1,0 +1,20 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of PCB Document [4 Layers Motherboard.PcbDoc]
+   Generated File[4 Layers Motherboard.GTL]
+   Generated File[4 Layers Motherboard.G1]
+   Generated File[4 Layers Motherboard.G2]
+   Generated File[4 Layers Motherboard.GBL]
+   Generated File[4 Layers Motherboard.GTO]
+   Generated File[4 Layers Motherboard.GBO]
+   Generated File[4 Layers Motherboard.GTS]
+   Generated File[4 Layers Motherboard.GBS]
+   Generated File[4 Layers Motherboard.GTP]
+   Generated File[4 Layers Motherboard.GBP]
+   Generated File[4 Layers Motherboard.GKO]
+
+
+Files Generated   : 11
+Documents Printed : 0
+
+Finished Output Generation At 16:35:20 On 2023-03-21

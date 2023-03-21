@@ -1,0 +1,16 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of PCB Document [Thermistors Board V2.PcbDoc]
+   Generated File[Thermistors Board V2.GTL]
+   Generated File[Thermistors Board V2.GBL]
+   Generated File[Thermistors Board V2.GTO]
+   Generated File[Thermistors Board V2.GBO]
+   Generated File[Thermistors Board V2.GTS]
+   Generated File[Thermistors Board V2.GBS]
+   Generated File[Thermistors Board V2.GKO]
+
+
+Files Generated   : 7
+Documents Printed : 0
+
+Finished Output Generation At 17:02:53 On 2023-03-21

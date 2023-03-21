@@ -1,0 +1,1917 @@
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 7 0.6643701 1.0187008 180 N C29 Cap_10_uF_16V_Tantalum_1411 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '1411'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '718-1124-1-ND'
+PRP Supplier_Part_Number_2 '718-1124-6-ND'
+PRP Supplier_Part_Number_3 '718-1124-2-ND'
+PRP Value '10µF'
+PRP Voltage_Rating '16V'
+TOP 0 0.7322835 1.0187008 180 N 127 62 1
+TOP 1 0.5964567 1.0187008 180 N 129 34 2
+#
+# CMP 1
+CMP 26 -0.3877957 0.2785433 270 N TP7 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3877957 0.2785433 270 N 72 0 1
+#
+# CMP 2
+CMP 21 -0.5285432 -1.1781495 0 N TVS2 USB_OTG_TVS_Diode_Array_25V_Clamp_SMD ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 'RCLAMP0504FATCTCT-ND'
+PRP Supplier_Part_Number_2 'RCLAMP0504FATCTDKR-ND'
+PRP Supplier_Part_Number_3 'RCLAMP0504FATCTTR-ND'
+TOP 0 -0.5650432 -1.1521495 0 N 117 3 1
+TOP 1 -0.5650432 -1.1781495 0 N 115 73 2
+TOP 2 -0.5650432 -1.2041495 0 N 58 2 3
+TOP 3 -0.4920432 -1.2041495 0 N 31 2 4
+TOP 4 -0.4920432 -1.1781495 0 N 59 2 5
+TOP 5 -0.4920432 -1.1521495 0 N 116 3 6
+#
+# CMP 3
+CMP 26 -0.3877957 0.1230163 180 N TP14 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3877957 0.1230163 180 N 44 0 1
+#
+# CMP 4
+CMP 26 -0.2185229 -0.922225 270 N TP24 Test_Point ;0=2,1=0.0000
+TOP 0 -0.2185229 -0.922225 270 N 117 0 1
+#
+# CMP 5
+CMP 26 -0.3681102 -0.922225 270 N TP23 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3681102 -0.922225 270 N 116 0 1
+#
+# CMP 6
+CMP 26 0.4972284 -1.293307 270 N TP21 Test_Point ;0=2,1=0.0000
+TOP 0 0.4972284 -1.293307 270 N 59 1 1
+#
+# CMP 7
+CMP 13 -0.4566929 1.0777362 90 N L2 ILSB0603ER4R7K ;0=1,1=0.2913
+PRP Case_Code_(Imperial) '1206'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.vishay.com/docs/34029/ilsb1206.pdf'
+PRP Core_Material 'Ferrite'
+PRP Depth '1.8mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Self_Resonant_Frequency '41MHz'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_Part_Number_1 '541-4369-1-ND'
+PRP Supplier_Part_Number_2 '541-4369-6-ND'
+PRP Tolerance '10%'
+PRP Value '4.7µH'
+PRP Weight '0.000353oz'
+PRP Width '1.6mm'
+TOP 0 -0.4566929 1.1102362 90 N 115 70 1
+TOP 1 -0.4566929 1.0452362 90 N 127 63 2
+#
+# CMP 8
+CMP 29 -0.1397638 1.0511811 270 N ESD1 PRTR5V0U2X,215 ;0=1,1=0.4291
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '1727-3884-1-ND'
+PRP Supplier_Part_Number_2 '1727-3884-6-ND'
+PRP Supplier_Part_Number_3 '1727-3884-2-ND'
+TOP 0 -0.1692914 1.011811 270 N 115 76 1
+TOP 1 -0.1023622 1.011811 270 N 115 75 2
+TOP 2 -0.1023622 1.0905512 270 N 57 1 3
+TOP 3 -0.1771654 1.0905512 270 N 56 2 4
+#
+# CMP 9
+CMP 26 0.3838581 -1.293307 270 N TP20 Test_Point ;0=2,1=0.0000
+TOP 0 0.3838581 -1.293307 270 N 55 0 1
+#
+# CMP 10
+CMP 26 -0.3809057 -0.3612356 180 N TP16 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3809057 -0.3612356 180 N 43 0 1
+#
+# CMP 11
+CMP 26 -0.3809056 0.6150903 270 N TP12 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3809056 0.6150903 270 N 45 0 1
+#
+# CMP 12
+CMP 26 -0.3828739 -0.6998032 270 N TP11 Test_Point ;0=2,1=0.0000
+TOP 0 -0.3828739 -0.6998032 270 N 70 0 1
+#
+# CMP 13
+CMP 26 0.511811 -0.890748 270 N TP10 Test_Point ;0=2,1=0.0000
+TOP 0 0.511811 -0.890748 270 N 46 0 1
+#
+# CMP 14
+CMP 12 -1.1377953 -0.4537251 90 N J5 BF050-20-A-B-0400-0300-L-G ;0=2,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 '2073-BF050-20-A-B-0400-0300-L-G-ND'
+TOP 0 -1.1771654 -0.0993944 90 N 115 44 1
+TOP 1 -1.1771654 -0.1781345 90 N 115 43 2
+TOP 2 -1.1771654 -0.2568747 90 N 83 0 3
+TOP 3 -1.1771654 -0.3356148 90 N 86 0 4
+TOP 4 -1.1771654 -0.414355 90 N 89 0 5
+TOP 5 -1.1771654 -0.4930951 90 N 87 0 6
+TOP 6 -1.1771654 -0.5718353 90 N 76 0 7
+TOP 7 -1.1771654 -0.6505754 90 N 78 0 8
+TOP 8 -1.1771654 -0.7293156 90 N 80 0 9
+TOP 9 -1.1771654 -0.8080557 90 N 79 0 10
+TOP 10 -1.0984252 -0.8080557 90 N 115 46 11
+TOP 11 -1.0984252 -0.7293156 90 N 81 0 12
+TOP 12 -1.0984252 -0.6505754 90 N 82 0 13
+TOP 13 -1.0984252 -0.5718353 90 N 77 0 14
+TOP 14 -1.0984252 -0.4930951 90 N 75 0 15
+TOP 15 -1.0984252 -0.414355 90 N 88 0 16
+TOP 16 -1.0984252 -0.3356148 90 N 90 0 17
+TOP 17 -1.0984252 -0.2568747 90 N 85 0 18
+TOP 18 -1.0984252 -0.1781345 90 N 84 0 19
+TOP 19 -1.0984252 -0.0993944 90 N 115 45 20
+#
+# CMP 15
+CMP 12 -1.1377953 0.4528156 90 N J4 BF050-20-A-B-0400-0300-L-G ;0=2,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 '2073-BF050-20-A-B-0400-0300-L-G-ND'
+TOP 0 -1.1771654 0.8071463 90 N 115 40 1
+TOP 1 -1.1771654 0.7284062 90 N 115 39 2
+TOP 2 -1.1771654 0.649666 90 N 99 0 3
+TOP 3 -1.1771654 0.5709259 90 N 102 0 4
+TOP 4 -1.1771654 0.4921857 90 N 105 0 5
+TOP 5 -1.1771654 0.4134456 90 N 103 0 6
+TOP 6 -1.1771654 0.3347054 90 N 92 0 7
+TOP 7 -1.1771654 0.2559653 90 N 94 0 8
+TOP 8 -1.1771654 0.1772251 90 N 96 0 9
+TOP 9 -1.1771654 0.098485 90 N 95 0 10
+TOP 10 -1.0984252 0.098485 90 N 115 42 11
+TOP 11 -1.0984252 0.1772251 90 N 97 0 12
+TOP 12 -1.0984252 0.2559653 90 N 98 0 13
+TOP 13 -1.0984252 0.3347054 90 N 93 0 14
+TOP 14 -1.0984252 0.4134456 90 N 91 0 15
+TOP 15 -1.0984252 0.4921857 90 N 104 0 16
+TOP 16 -1.0984252 0.5709259 90 N 106 0 17
+TOP 17 -1.0984252 0.649666 90 N 101 0 18
+TOP 18 -1.0984252 0.7284062 90 N 100 0 19
+TOP 19 -1.0984252 0.8071463 90 N 115 41 20
+#
+# CMP 16
+CMP 12 1.1377961 -0.4537251 90 N J3 BF050-20-A-B-0400-0300-L-G ;0=2,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 '2073-BF050-20-A-B-0400-0300-L-G-ND'
+TOP 0 1.098426 -0.0993944 90 N 115 36 1
+TOP 1 1.098426 -0.1781345 90 N 115 35 2
+TOP 2 1.098426 -0.2568747 90 N 54 1 3
+TOP 3 1.098426 -0.3356148 90 N 53 1 4
+TOP 4 1.098426 -0.414355 90 N 52 1 5
+TOP 5 1.098426 -0.4930951 90 N 51 1 6
+TOP 6 1.098426 -0.5718353 90 N 108 1 7
+TOP 7 1.098426 -0.6505754 90 N 110 1 8
+TOP 8 1.098426 -0.7293156 90 N 112 1 9
+TOP 9 1.098426 -0.8080557 90 N 113 1 10
+TOP 10 1.1771662 -0.8080557 90 N 115 38 11
+TOP 11 1.1771662 -0.7293156 90 N 111 1 12
+TOP 12 1.1771662 -0.6505754 90 N 114 1 13
+TOP 13 1.1771662 -0.5718353 90 N 109 1 14
+TOP 14 1.1771662 -0.4930951 90 N 107 1 15
+TOP 15 1.1771662 -0.414355 90 N 18 1 16
+TOP 16 1.1771662 -0.3356148 90 N 17 1 17
+TOP 17 1.1771662 -0.2568747 90 N 16 1 18
+TOP 18 1.1771662 -0.1781345 90 N 3 1 19
+TOP 19 1.1771662 -0.0993944 90 N 115 37 20
+#
+# CMP 17
+CMP 12 1.1377961 0.4526771 90 N J2 BF050-20-A-B-0400-0300-L-G ;0=2,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 '2073-BF050-20-A-B-0400-0300-L-G-ND'
+TOP 0 1.098426 0.8070078 90 N 115 32 1
+TOP 1 1.098426 0.7282677 90 N 115 31 2
+TOP 2 1.098426 0.6495275 90 N 21 1 3
+TOP 3 1.098426 0.5707874 90 N 26 1 4
+TOP 4 1.098426 0.4920472 90 N 24 1 5
+TOP 5 1.098426 0.4133071 90 N 119 1 6
+TOP 6 1.098426 0.3345669 90 N 121 1 7
+TOP 7 1.098426 0.2558268 90 N 126 1 8
+TOP 8 1.098426 0.1770866 90 N 125 1 9
+TOP 9 1.098426 0.0983465 90 N 123 1 10
+TOP 10 1.1771662 0.0983465 90 N 115 34 11
+TOP 11 1.1771662 0.1770866 90 N 124 1 12
+TOP 12 1.1771662 0.2558268 90 N 122 1 13
+TOP 13 1.1771662 0.3345669 90 N 120 1 14
+TOP 14 1.1771662 0.4133071 90 N 23 1 15
+TOP 15 1.1771662 0.4920472 90 N 25 1 16
+TOP 16 1.1771662 0.5707874 90 N 22 1 17
+TOP 17 1.1771662 0.6495275 90 N 20 1 18
+TOP 18 1.1771662 0.7282677 90 N 19 1 19
+TOP 19 1.1771662 0.8070078 90 N 115 33 20
+#
+# CMP 18
+CMP 4 0.496063 -0.5846457 270 N C45 Cap_Ceramic_1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '0603'
+PRP Construction 'Flat'
+PRP Dielectric 'XR7'
+PRP Height '0.8mm'
+PRP Length '1.6mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Resistor_Type 'Ceramic'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '13-CC0603KPX7R7BB105CT-ND'
+PRP Supplier_Part_Number_2 '13-CC0603KPX7R7BB105DKR-ND'
+PRP Supplier_Part_Number_3 '13-CC0603KPX7R7BB105TR-ND'
+PRP Termination 'SMT/SMD'
+PRP Tolerance '10%'
+PRP Value '1µF'
+PRP Voltage_Rating_(DC) '16V'
+TOP 0 0.496063 -0.611299 270 N 130 18 1
+TOP 1 0.496063 -0.5579924 270 N 127 61 2
+#
+# CMP 19
+CMP 7 0.6633858 -0.5049213 180 N C44 Cap_10_uF_16V_Tantalum_1411 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '1411'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '718-1124-1-ND'
+PRP Supplier_Part_Number_2 '718-1124-6-ND'
+PRP Supplier_Part_Number_3 '718-1124-2-ND'
+PRP Value '10µF'
+PRP Voltage_Rating '16V'
+TOP 0 0.7312992 -0.5049213 180 N 127 33 1
+TOP 1 0.5954724 -0.5049213 180 N 129 19 2
+#
+# CMP 20
+CMP 2 0.1958661 0.4064961 180 N C33 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.2225194 0.4064961 180 N 128 37 1
+TOP 1 0.1692128 0.4064961 180 N 127 34 2
+#
+# CMP 21
+CMP 2 0.1909449 0.7108239 180 N C28 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.2175982 0.7108239 180 N 128 38 1
+TOP 1 0.1642916 0.7108239 180 N 127 35 2
+#
+# CMP 22
+CMP 2 0.1945578 -0.5919292 180 N C43 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.2212111 -0.5919292 180 N 128 39 1
+TOP 1 0.1679045 -0.5919292 180 N 127 36 2
+#
+# CMP 23
+CMP 2 0.8375984 -0.5255906 270 N C42 CC0603JRX7R9BB104 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.8375984 -0.5522439 270 N 128 40 1
+TOP 1 0.8375984 -0.4989373 270 N 115 49 2
+#
+# CMP 24
+CMP 4 0.476378 -0.0285433 270 N C40 Cap_Ceramic_1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '0603'
+PRP Construction 'Flat'
+PRP Dielectric 'XR7'
+PRP Height '0.8mm'
+PRP Length '1.6mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Resistor_Type 'Ceramic'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '13-CC0603KPX7R7BB105CT-ND'
+PRP Supplier_Part_Number_2 '13-CC0603KPX7R7BB105DKR-ND'
+PRP Supplier_Part_Number_3 '13-CC0603KPX7R7BB105TR-ND'
+PRP Termination 'SMT/SMD'
+PRP Tolerance '10%'
+PRP Value '1µF'
+PRP Voltage_Rating_(DC) '16V'
+TOP 0 0.476378 -0.0551966 270 N 130 11 1
+TOP 1 0.476378 -0.00189 270 N 127 37 2
+#
+# CMP 25
+CMP 24 -0.8444211 1.2637798 0 N R3 Res_22K1_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RC0603FR-0722K1L/727058'
+PRP Composition 'Thick Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Features 'Moisture Resistant'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-08 20:29:23'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'CutTape'
+PRP Part_Number 'RC0603FR-0722K1L'
+PRP Part_Status 'Active'
+PRP partid '19017'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.01'
+PRP Resistance '22K1'
+PRP Series 'RC_L'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 '311-22.1KHRCT-ND'
+PRP Supplier_Part_Number_2 '311-22.1KHRDKR-ND'
+PRP Supplier_Part_Number_3 '311-22.1KHRTR-ND'
+PRP Temperature_Coefficient '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '22K1'
+TOP 0 -0.8750001 1.2637798 0 N 40 2 1
+TOP 1 -0.8138421 1.2637798 0 N 115 74 2
+#
+# CMP 26
+CMP 7 0.6653542 0.0423228 180 N C38 Cap_10_uF_16V_Tantalum_1411 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '1411'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '718-1124-1-ND'
+PRP Supplier_Part_Number_2 '718-1124-6-ND'
+PRP Supplier_Part_Number_3 '718-1124-2-ND'
+PRP Value '10µF'
+PRP Voltage_Rating '16V'
+TOP 0 0.7332676 0.0423228 180 N 127 38 1
+TOP 1 0.5974408 0.0423228 180 N 129 20 2
+#
+# CMP 27
+CMP 2 0.1948819 -0.1122047 180 N C39 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.2215352 -0.1122047 180 N 128 41 1
+TOP 1 0.1682286 -0.1122047 180 N 127 39 2
+#
+# CMP 28
+CMP 2 0.8425197 0.0127953 270 N C37 CC0603JRX7R9BB104 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.8425197 -0.013858 270 N 128 42 1
+TOP 1 0.8425197 0.0394486 270 N 115 50 2
+#
+# CMP 29
+CMP 4 0.496063 0.4399606 270 N C35 Cap_Ceramic_1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '0603'
+PRP Construction 'Flat'
+PRP Dielectric 'XR7'
+PRP Height '0.8mm'
+PRP Length '1.6mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Resistor_Type 'Ceramic'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '13-CC0603KPX7R7BB105CT-ND'
+PRP Supplier_Part_Number_2 '13-CC0603KPX7R7BB105DKR-ND'
+PRP Supplier_Part_Number_3 '13-CC0603KPX7R7BB105TR-ND'
+PRP Termination 'SMT/SMD'
+PRP Tolerance '10%'
+PRP Value '1µF'
+PRP Voltage_Rating_(DC) '16V'
+TOP 0 0.496063 0.4133073 270 N 130 12 1
+TOP 1 0.496063 0.4666139 270 N 127 40 2
+#
+# CMP 30
+CMP 7 0.6633858 0.5285433 180 N C34 Cap_10_uF_16V_Tantalum_1411 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '1411'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '718-1124-1-ND'
+PRP Supplier_Part_Number_2 '718-1124-6-ND'
+PRP Supplier_Part_Number_3 '718-1124-2-ND'
+PRP Value '10µF'
+PRP Voltage_Rating '16V'
+TOP 0 0.7312992 0.5285433 180 N 127 41 1
+TOP 1 0.5954724 0.5285433 180 N 129 21 2
+#
+# CMP 31
+CMP 2 0.8425196 0.4940945 270 N C32 CC0603JRX7R9BB104 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.8425196 0.4674412 270 N 128 43 1
+TOP 1 0.8425196 0.5207478 270 N 115 51 2
+#
+# CMP 32
+CMP 4 0.4872047 0.9281496 270 N C30 Cap_Ceramic_1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '0603'
+PRP Construction 'Flat'
+PRP Dielectric 'XR7'
+PRP Height '0.8mm'
+PRP Length '1.6mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Resistor_Type 'Ceramic'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '13-CC0603KPX7R7BB105CT-ND'
+PRP Supplier_Part_Number_2 '13-CC0603KPX7R7BB105DKR-ND'
+PRP Supplier_Part_Number_3 '13-CC0603KPX7R7BB105TR-ND'
+PRP Termination 'SMT/SMD'
+PRP Tolerance '10%'
+PRP Value '1µF'
+PRP Voltage_Rating_(DC) '16V'
+TOP 0 0.4872047 0.9014963 270 N 130 13 1
+TOP 1 0.4872047 0.9548029 270 N 127 42 2
+#
+# CMP 33
+CMP 2 0.8700788 0.9330708 0 N C27 CC0603JRX7R9BB104 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 0.8434255 0.9330708 0 N 128 44 1
+TOP 1 0.8967321 0.9330708 0 N 115 52 2
+#
+# CMP 34
+CMP 19 0.6840551 -0.6604331 0 N ADC8 empty_part_name ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP33141-10-E/MS-ND'
+TOP 0 0.5974409 -0.621063 270 N 129 35 1
+TOP 1 0.5974409 -0.640748 270 N 130 19 2
+TOP 2 0.5974409 -0.6604331 270 N 66 3 3
+TOP 3 0.5974409 -0.6801181 270 N 127 64 4
+TOP 4 0.5974409 -0.6998032 270 N 127 65 5
+TOP 5 0.7706692 -0.6998032 270 N 4 1 6
+TOP 6 0.7706692 -0.6801181 270 N 74 9 7
+TOP 7 0.7706692 -0.6604331 270 N 30 8 8
+TOP 8 0.7706692 -0.640748 270 N 128 79 9
+TOP 9 0.7706692 -0.621063 270 N 128 78 10
+#
+# CMP 35
+CMP 19 0.6840551 -0.1262205 0 N ADC7 empty_part_name ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP33141-10-E/MS-ND'
+TOP 0 0.5974409 -0.0868504 270 N 129 22 1
+TOP 1 0.5974409 -0.1065354 270 N 130 14 2
+TOP 2 0.5974409 -0.1262205 270 N 67 1 3
+TOP 3 0.5974409 -0.1459055 270 N 127 44 4
+TOP 4 0.5974409 -0.1655906 270 N 127 43 5
+TOP 5 0.7706692 -0.1655906 270 N 5 1 6
+TOP 6 0.7706692 -0.1459055 270 N 74 6 7
+TOP 7 0.7706692 -0.1262205 270 N 30 5 8
+TOP 8 0.7706692 -0.1065354 270 N 128 45 9
+TOP 9 0.7706692 -0.0868504 270 N 128 46 10
+#
+# CMP 36
+CMP 19 0.6840551 0.3626378 0 N ADC6 empty_part_name ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP33141-10-E/MS-ND'
+TOP 0 0.5974409 0.4020079 270 N 129 23 1
+TOP 1 0.5974409 0.3823229 270 N 130 15 2
+TOP 2 0.5974409 0.3626378 270 N 68 1 3
+TOP 3 0.5974409 0.3429528 270 N 127 45 4
+TOP 4 0.5974409 0.3232677 270 N 127 46 5
+TOP 5 0.7706692 0.3232677 270 N 6 1 6
+TOP 6 0.7706692 0.3429528 270 N 74 7 7
+TOP 7 0.7706692 0.3626378 270 N 30 6 8
+TOP 8 0.7706692 0.3823229 270 N 128 48 9
+TOP 9 0.7706692 0.4020079 270 N 128 47 10
+#
+# CMP 37
+CMP 19 0.6840551 0.8549606 0 N ADC5 empty_part_name ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP33141-10-E/MS-ND'
+TOP 0 0.5974409 0.8943307 270 N 129 24 1
+TOP 1 0.5974409 0.8746457 270 N 130 16 2
+TOP 2 0.5974409 0.8549606 270 N 69 1 3
+TOP 3 0.5974409 0.8352756 270 N 127 48 4
+TOP 4 0.5974409 0.8155905 270 N 127 47 5
+TOP 5 0.7706692 0.8155905 270 N 7 1 6
+TOP 6 0.7706692 0.8352756 270 N 74 8 7
+TOP 7 0.7706692 0.8549606 270 N 30 7 8
+TOP 8 0.7706692 0.8746457 270 N 128 49 9
+TOP 9 0.7706692 0.8943307 270 N 128 50 10
+#
+# CMP 38
+CMP 20 0.1945578 -0.7375984 0 N U8 Instrumentation_Op_Amp_35_MHz_8_pins ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP6N11-100E/SN-ND'
+TOP 0 0.0823531 -0.6625984 270 N 66 2 1
+TOP 1 0.0823531 -0.7125984 270 N 32 0 2
+TOP 2 0.0823531 -0.7625984 270 N 42 1 3
+TOP 3 0.0823531 -0.8125984 270 N 127 50 4
+TOP 4 0.3067625 -0.8125984 270 N 127 49 5
+TOP 5 0.3067625 -0.7625984 270 N 66 1 6
+TOP 6 0.3067625 -0.7125984 270 N 128 51 7
+TOP 7 0.3067625 -0.6625984 270 N 128 52 8
+#
+# CMP 39
+CMP 20 0.1906208 -0.2639763 0 N U7 Instrumentation_Op_Amp_35_MHz_8_pins ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP6N11-100E/SN-ND'
+TOP 0 0.0784161 -0.1889763 270 N 67 3 1
+TOP 1 0.0784161 -0.2389763 270 N 33 0 2
+TOP 2 0.0784161 -0.2889763 270 N 43 1 3
+TOP 3 0.0784161 -0.3389763 270 N 127 52 4
+TOP 4 0.3028255 -0.3389763 270 N 127 51 5
+TOP 5 0.3028255 -0.2889763 270 N 67 2 6
+TOP 6 0.3028255 -0.2389763 270 N 128 53 7
+TOP 7 0.3028255 -0.1889763 270 N 128 54 8
+#
+# CMP 40
+CMP 20 0.1906208 0.2592443 0 N U6 Instrumentation_Op_Amp_35_MHz_8_pins ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP6N11-100E/SN-ND'
+TOP 0 0.0784161 0.3342443 270 N 68 2 1
+TOP 1 0.0784161 0.2842443 270 N 34 0 2
+TOP 2 0.0784161 0.2342443 270 N 44 1 3
+TOP 3 0.0784161 0.1842443 270 N 127 53 4
+TOP 4 0.3028255 0.1842443 270 N 127 54 5
+TOP 5 0.3028255 0.2342443 270 N 68 3 6
+TOP 6 0.3028255 0.2842443 270 N 128 56 7
+TOP 7 0.3028255 0.3342443 270 N 128 55 8
+#
+# CMP 41
+CMP 20 0.1906208 0.5572759 0 N U5 Instrumentation_Op_Amp_35_MHz_8_pins ;0=1,1=0.0000
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP6N11-100E/SN-ND'
+TOP 0 0.0784161 0.6322759 270 N 69 3 1
+TOP 1 0.0784161 0.5822759 270 N 35 0 2
+TOP 2 0.0784161 0.5322759 270 N 45 1 3
+TOP 3 0.0784161 0.4822759 270 N 127 56 4
+TOP 4 0.3028255 0.4822759 270 N 127 55 5
+TOP 5 0.3028255 0.5322759 270 N 69 2 6
+TOP 6 0.3028255 0.5822759 270 N 128 57 7
+TOP 7 0.3028255 0.6322759 270 N 128 58 8
+#
+# CMP 42
+CMP 22 -0.1929134 -0.7870079 0 N R28 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234924 -0.7870079 0 N 129 25 1
+TOP 1 -0.1623344 -0.7870079 0 N 42 2 2
+#
+# CMP 43
+CMP 22 0.0029528 -0.662925 270 N R27 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 0.0029528 -0.693504 270 N 32 1 1
+TOP 1 0.0029528 -0.632346 270 N 127 57 2
+#
+# CMP 44
+CMP 22 -0.1929996 -0.693504 0 N R26 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2235786 -0.693504 0 N 129 26 1
+TOP 1 -0.1624206 -0.693504 0 N 32 2 2
+#
+# CMP 45
+CMP 22 -0.1929134 -0.3080709 0 N R25 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234924 -0.3080709 0 N 129 27 1
+TOP 1 -0.1623344 -0.3080709 0 N 43 2 2
+#
+# CMP 46
+CMP 22 -0.0295275 -0.1933742 270 N R24 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.0295275 -0.2239532 270 N 33 1 1
+TOP 1 -0.0295275 -0.1627952 270 N 127 58 2
+#
+# CMP 47
+CMP 22 -0.1929134 -0.2244094 0 N R23 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234924 -0.2244094 0 N 129 28 1
+TOP 1 -0.1623344 -0.2244094 0 N 33 2 2
+#
+# CMP 48
+CMP 22 -0.1929134 0.1919291 0 N R22 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234924 0.1919291 0 N 129 29 1
+TOP 1 -0.1623344 0.1919291 0 N 44 2 2
+#
+# CMP 49
+CMP 22 -0.0295276 0.3148233 270 N R21 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.0295276 0.2842443 270 N 34 1 1
+TOP 1 -0.0295276 0.3454023 270 N 127 59 2
+#
+# CMP 50
+CMP 22 -0.1929133 0.2842443 0 N R20 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234923 0.2842443 0 N 129 30 1
+TOP 1 -0.1623343 0.2842443 0 N 34 2 2
+#
+# CMP 51
+CMP 22 -0.1929135 0.5322759 0 N R19 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234925 0.5322759 0 N 129 31 1
+TOP 1 -0.1623345 0.5322759 0 N 45 2 2
+#
+# CMP 52
+CMP 22 -0.0009843 0.680245 270 N R18 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.0009843 0.649666 270 N 35 1 1
+TOP 1 -0.0009843 0.710824 270 N 127 60 2
+#
+# CMP 53
+CMP 22 -0.1929135 0.649666 0 N R17 Res_10K_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RT_1-to-0.01_RoHS_L_11.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RT0603BRD0710KL/1072198'
+PRP Composition 'Thin Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-06 20:27:57'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'RT0603BRD0710KL'
+PRP Part_Status 'Active'
+PRP partid '22611'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.03'
+PRP Resistance '10K'
+PRP Series 'RT'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 'YAG1236CT-ND'
+PRP Supplier_Part_Number_2 'YAG1236DKR-ND'
+PRP Supplier_Part_Number_3 'YAG1236TR-ND'
+PRP Temperature_Coefficient '±25ppm/°C'
+PRP Tolerance '±0.1%'
+PRP Value '10K'
+TOP 0 -0.2234925 0.649666 0 N 129 32 1
+TOP 1 -0.1623345 0.649666 0 N 35 2 2
+#
+# CMP 54
+CMP 23 -0.8750001 1.1499175 90 N R4 Res_88K7_SMT_0603 ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'http://www.vishay.com/docs/20035/dcrcwe3.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/vishay-dale/CRCW060388K7FKEB/5073407'
+PRP Composition 'Thick Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Features 'Automotive AEC-Q200'
+PRP Height_-_Seated_(Max) '0.020_ (0.50mm)'
+PRP lastupdated '2023-03-06 20:27:22'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Vishay Dale'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'CutTape'
+PRP Part_Number 'CRCW060388K7FKEB'
+PRP Part_Status 'Active'
+PRP partid '56612'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.01'
+PRP Ratings 'AEC-Q200'
+PRP Resistance '88K7'
+PRP Series 'CRCW'
+PRP Size_/_Dimension '0.063_ L x 0.033_ W (1.60mm x 0.85mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 '541-CRCW060388K7FKEBCT-ND'
+PRP Supplier_Part_Number_2 '541-CRCW060388K7FKEBDKR-ND'
+PRP Temperature_Coefficient '±100ppm/°C'
+PRP Tolerance '±1%'
+TOP 0 -0.8750001 1.1780826 90 N 40 1 1
+TOP 1 -0.8750001 1.1217524 90 N 128 80 2
+#
+# CMP 55
+CMP 24 0.6270357 1.234252 180 N R2 RC0603FR-074K64L ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RC0603FR-074K64L/727211'
+PRP Composition 'Thick Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Features 'Moisture Resistant'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-10 20:29:36'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'CutTape'
+PRP Part_Number 'RC0603FR-074K64L'
+PRP Part_Status 'Active'
+PRP partid '12437'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.01'
+PRP Resistance '4K64'
+PRP Series 'RC_L'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'DigiKey'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 '311-4.64KHRCT-ND'
+PRP Temperature_Coefficient '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '4K64'
+TOP 0 0.6576147 1.234252 180 N 115 53 1
+TOP 1 0.5964567 1.234252 180 N 50 1 2
+#
+# CMP 56
+CMP 24 0.4901574 1.234252 0 N R1 RC0603FR-072K61L ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/RC0603FR-072K61L/727030'
+PRP Composition 'Thick Film'
+PRP Device_Package '0603 (1608 Metric)'
+PRP Features 'Moisture Resistant'
+PRP Height_-_Seated_(Max) '0.022_ (0.55mm)'
+PRP lastupdated '2023-03-10 20:29:10'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Number_of_Terminations '2'
+PRP Operating_Temperature '-55°C ~ 155°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'CutTape'
+PRP Part_Number 'RC0603FR-072K61L'
+PRP Part_Status 'Active'
+PRP partid '19094'
+PRP Power_(Watts) '0.1W, 1/10W'
+PRP price '0.01'
+PRP Resistance '2K61'
+PRP Series 'RC_L'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package '0603'
+PRP Supplier_Part_Number_1 '311-2.61KHRCT-ND'
+PRP Supplier_Part_Number_2 '311-2.61KHRDKR-ND'
+PRP Supplier_Part_Number_3 '311-2.61KHRTR-ND'
+PRP Temperature_Coefficient '±100ppm/°C'
+PRP Tolerance '±1%'
+PRP Value '2K61'
+TOP 0 0.4595784 1.234252 0 N 128 59 1
+TOP 1 0.5207364 1.234252 0 N 50 2 2
+#
+# CMP 57
+CMP 14 -0.2165354 1.1968504 180 N Q1 IRLML9303TRPBF ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.infineon.com/dgdl/irlml9303pbf.pdf?fileId=5546d462533600a401535668ef1d2642'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/infineon-technologies/IRLML9303TRPBF/2354147'
+PRP Current_-_Continuous_Drain_(Id)_@_25°C '2.3A (Ta)'
+PRP Drain_to_Source_Voltage_(Vdss) '30 V'
+PRP Drive_Voltage_(Max_Rds_On___Min_Rds_On) '4.5V, 10V'
+PRP FET_Type 'P-Channel'
+PRP Gate_Charge_(Qg)_(Max)_@_Vgs '2 nC @ 4.5 V'
+PRP Input_Capacitance_(Ciss)_(Max)_@_Vds '160 pF @ 25 V'
+PRP lastupdated '2023-03-05 21:05:43'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Infineon Technologies'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount'
+PRP Operating_Temperature '-55°C ~ 150°C (TJ)'
+PRP Package_/_Case 'TO-236-3, SC-59, SOT-23-3'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'IRLML9303TRPBF'
+PRP Part_Status 'Active'
+PRP Power_Dissipation_(Max) '1.25W (Ta)'
+PRP price '0.11'
+PRP Rds_On_(Max)_@_Id__Vgs '165mOhm @ 2.3A, 10V'
+PRP Series 'HEXFET®'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Device_Package 'Micro3™/SOT-23'
+PRP Supplier_Part_Number_1 'IRLML9303TRPBFCT-ND'
+PRP Supplier_Part_Number_2 'IRLML9303TRPBFDKR-ND'
+PRP Supplier_Part_Number_3 'IRLML9303TRPBFTR-ND'
+PRP Technology 'MOSFET (Metal Oxide)'
+PRP Vgs_(Max) '±20V'
+PRP Vgs(th)_(Max)_@_Id '2.4V @ 10µA'
+TOP 0 -0.1797193 1.1594488 180 N 56 1 1
+TOP 1 -0.1797193 1.234252 180 N 115 71 2
+TOP 2 -0.2533515 1.1968504 180 N 41 1 3
+#
+# CMP 58
+CMP 18 0.2116141 1.0217319 180 N VREF2 Voltage_Reference_Series_Fixed_1.8V ;0=1,1=0.0000
+PRP Case/Package 'SOT-23-6'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP1501-Data-Sheet-DS20005474F.pdf'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-40°C'
+PRP Min_Output_Voltage '1.8V'
+PRP Operating_Supply_Current '550µA'
+PRP Output_Current '20mA'
+PRP Output_Type 'Fixed'
+PRP Reference_Type 'Series'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP1501T-18E/CHYCT-ND'
+PRP Supplier_Part_Number_2 'MCP1501T-18E/CHYDKR-ND'
+PRP Temperature_Coefficient '50ppm/°C'
+PRP Tolerance '0.08%'
+TOP 0 0.2637795 0.9843303 90 N 130 17 1
+TOP 1 0.2637795 1.0217319 90 N 115 54 2
+TOP 2 0.2637795 1.0591334 90 N 115 55 3
+TOP 3 0.1594488 1.0591334 90 N 128 60 4
+TOP 4 0.1594488 1.0217319 90 N 115 56 5
+TOP 5 0.1594488 0.9843303 90 N 61 0 6
+#
+# CMP 59
+CMP 17 -0.6653545 1.2401575 0 N VREG1 Buck_Adjustable_Switching_Reg_Pos ;0=1,1=0.0000
+PRP Arrow_Part_Number 'LMR50410YFQDBVRQ1'
+PRP Arrow_Price/Stock 'https://www.arrow.com/en/products/lmr50410yfqdbvrq1/texas-instruments?region=nac'
+PRP Datasheet_Link 'https://www.ti.com/product/LMR50410-Q1'
+PRP Height '1.45mm'
+PRP Manufacturer_Name 'Texas Instruments'
+PRP Manufacturer_Part_Number 'LMR50410YFQDBVRQ1'
+PRP Mouser_Part_Number '595-MR50410YFQDBVRQ1'
+PRP Mouser_Price/Stock 'https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LMR50410YFQDBVRQ1?qs=81r%252BiQLm7BRUAgUFqYZycA%3D%3D'
+PRP Mouser_Testing_Part_Number ''
+PRP Mouser_Testing_Price/Stock ''
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '296-LMR50410YFQDBVRQ1CT-ND'
+PRP Supplier_Part_Number_2 '296-LMR50410YFQDBVRQ1DKR-ND'
+PRP Supplier_Part_Number_3 '296-LMR50410YFQDBVRQ1TR-ND'
+TOP 0 -0.7145671 1.2775591 0 N 62 1 1
+TOP 1 -0.7145671 1.2401575 0 N 115 72 2
+TOP 2 -0.7145671 1.2027559 0 N 40 0 3
+TOP 3 -0.6161419 1.2027559 0 N 64 2 4
+TOP 4 -0.6161419 1.2401575 0 N 64 3 5
+TOP 5 -0.6161419 1.2775591 0 N 63 2 6
+#
+# CMP 60
+CMP 18 0.8267716 1.1919292 0 N VREF1 Voltage_Reference_Series_Fixed_3.3V ;0=1,1=0.0000
+PRP Case/Package 'SOT-23-6'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP1501-Data-Sheet-DS20005474F.pdf'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-40°C'
+PRP Min_Output_Voltage '3.3V'
+PRP Operating_Supply_Current '550µA'
+PRP Output_Current '20mA'
+PRP Output_Type 'Fixed'
+PRP Reference_Type 'Series'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 'MCP1501T-33E/CHYCT-ND'
+PRP Supplier_Part_Number_2 'MCP1501T-33E/CHYDKR-ND'
+PRP Supplier_Part_Number_3 'MCP1501T-33E/CHYTR-ND'
+PRP Temperature_Coefficient '50ppm/°C'
+PRP Tolerance '0.08%'
+TOP 0 0.7746062 1.2293308 270 N 129 33 1
+TOP 1 0.7746062 1.1919292 270 N 115 57 2
+TOP 2 0.7746062 1.1545277 270 N 115 58 3
+TOP 3 0.8789369 1.1545277 270 N 128 61 4
+TOP 4 0.8789369 1.1919292 270 N 115 59 5
+TOP 5 0.8789369 1.2293308 270 N 65 0 6
+#
+# CMP 61
+CMP 28 -0.6299213 -0.7637795 270 N MUX8 TMUX1208PWR ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.ti.com/lit/ds/symlink/tmux1208.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1678139087624&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmux1208'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '296-51847-1-ND'
+PRP Supplier_Part_Number_2 '296-51847-6-ND'
+PRP Supplier_Part_Number_3 '296-51847-2-ND'
+TOP 0 -0.7194882 -0.8769836 270 N 118 5 1
+TOP 1 -0.6938977 -0.8769836 270 N 128 63 2
+TOP 2 -0.6683071 -0.8769836 270 N 0 26 3
+TOP 3 -0.6427166 -0.8769836 270 N 82 1 4
+TOP 4 -0.617126 -0.8769836 270 N 81 1 5
+TOP 5 -0.5915355 -0.8769836 270 N 80 1 6
+TOP 6 -0.5659449 -0.8769836 270 N 79 1 7
+TOP 7 -0.5403544 -0.8769836 270 N 42 3 8
+TOP 8 -0.5403544 -0.6505754 270 N 75 1 9
+TOP 9 -0.5659449 -0.6505754 270 N 76 1 10
+TOP 10 -0.5915355 -0.6505754 270 N 77 1 11
+TOP 11 -0.617126 -0.6505754 270 N 78 1 12
+TOP 12 -0.6427166 -0.6505754 270 N 128 62 13
+TOP 13 -0.6683071 -0.6505754 270 N 115 60 14
+TOP 14 -0.6938977 -0.6505754 270 N 13 5 15
+TOP 15 -0.7194882 -0.6505754 270 N 14 5 16
+#
+# CMP 62
+CMP 28 -0.6299213 -0.2480315 270 N MUX7 TMUX1208PWR ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.ti.com/lit/ds/symlink/tmux1208.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1678139087624&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmux1208'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '296-51847-1-ND'
+PRP Supplier_Part_Number_2 '296-51847-6-ND'
+PRP Supplier_Part_Number_3 '296-51847-2-ND'
+TOP 0 -0.7194882 -0.3612356 270 N 118 6 1
+TOP 1 -0.6938977 -0.3612356 270 N 128 64 2
+TOP 2 -0.6683071 -0.3612356 270 N 0 27 3
+TOP 3 -0.6427166 -0.3612356 270 N 90 1 4
+TOP 4 -0.617126 -0.3612356 270 N 89 1 5
+TOP 5 -0.5915355 -0.3612356 270 N 88 1 6
+TOP 6 -0.5659449 -0.3612356 270 N 87 1 7
+TOP 7 -0.5403544 -0.3612356 270 N 43 3 8
+TOP 8 -0.5403544 -0.1348274 270 N 83 1 9
+TOP 9 -0.5659449 -0.1348274 270 N 84 1 10
+TOP 10 -0.5915355 -0.1348274 270 N 85 1 11
+TOP 11 -0.617126 -0.1348274 270 N 86 1 12
+TOP 12 -0.6427166 -0.1348274 270 N 128 65 13
+TOP 13 -0.6683071 -0.1348274 270 N 115 61 14
+TOP 14 -0.6938977 -0.1348274 270 N 13 6 15
+TOP 15 -0.7194882 -0.1348274 270 N 14 6 16
+#
+# CMP 63
+CMP 28 -0.6299213 0.2362205 270 N MUX6 TMUX1208PWR ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.ti.com/lit/ds/symlink/tmux1208.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1678139087624&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmux1208'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '296-51847-1-ND'
+PRP Supplier_Part_Number_2 '296-51847-6-ND'
+PRP Supplier_Part_Number_3 '296-51847-2-ND'
+TOP 0 -0.7194882 0.1230164 270 N 118 7 1
+TOP 1 -0.6938977 0.1230164 270 N 128 67 2
+TOP 2 -0.6683071 0.1230164 270 N 0 28 3
+TOP 3 -0.6427166 0.1230164 270 N 98 1 4
+TOP 4 -0.617126 0.1230164 270 N 97 1 5
+TOP 5 -0.5915355 0.1230164 270 N 96 1 6
+TOP 6 -0.5659449 0.1230164 270 N 95 1 7
+TOP 7 -0.5403544 0.1230164 270 N 44 3 8
+TOP 8 -0.5403544 0.3494246 270 N 91 1 9
+TOP 9 -0.5659449 0.3494246 270 N 92 1 10
+TOP 10 -0.5915355 0.3494246 270 N 93 1 11
+TOP 11 -0.617126 0.3494246 270 N 94 1 12
+TOP 12 -0.6427166 0.3494246 270 N 128 66 13
+TOP 13 -0.6683071 0.3494246 270 N 115 62 14
+TOP 14 -0.6938977 0.3494246 270 N 13 7 15
+TOP 15 -0.7194882 0.3494246 270 N 14 7 16
+#
+# CMP 64
+CMP 28 -0.621063 0.7282945 270 N MUX5 TMUX1208PWR ;0=1,1=0.0000
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.ti.com/lit/ds/symlink/tmux1208.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1678139087624&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftmux1208'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '296-51847-1-ND'
+PRP Supplier_Part_Number_2 '296-51847-6-ND'
+PRP Supplier_Part_Number_3 '296-51847-2-ND'
+TOP 0 -0.7106299 0.6150904 270 N 118 8 1
+TOP 1 -0.6850394 0.6150904 270 N 128 68 2
+TOP 2 -0.6594488 0.6150904 270 N 0 29 3
+TOP 3 -0.6338583 0.6150904 270 N 106 1 4
+TOP 4 -0.6082677 0.6150904 270 N 105 1 5
+TOP 5 -0.5826772 0.6150904 270 N 104 1 6
+TOP 6 -0.5570866 0.6150904 270 N 103 1 7
+TOP 7 -0.5314961 0.6150904 270 N 45 3 8
+TOP 8 -0.5314961 0.8414986 270 N 99 1 9
+TOP 9 -0.5570866 0.8414986 270 N 100 1 10
+TOP 10 -0.5826772 0.8414986 270 N 101 1 11
+TOP 11 -0.6082677 0.8414986 270 N 102 1 12
+TOP 12 -0.6338583 0.8414986 270 N 128 69 13
+TOP 13 -0.6594488 0.8414986 270 N 115 63 14
+TOP 14 -0.6850394 0.8414986 270 N 13 8 15
+TOP 15 -0.7106299 0.8414986 270 N 14 8 16
+#
+# CMP 65
+CMP 13 -0.5403544 1.2440947 90 N L1 ILSB0603ER4R7K ;0=1,1=0.0000
+PRP Case_Code_(Imperial) '1206'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.vishay.com/docs/34029/ilsb1206.pdf'
+PRP Core_Material 'Ferrite'
+PRP Depth '1.8mm'
+PRP Max_Operating_Temperature '125°C'
+PRP Min_Operating_Temperature '-55°C'
+PRP Self_Resonant_Frequency '41MHz'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_Part_Number_1 '541-4369-1-ND'
+PRP Supplier_Part_Number_2 '541-4369-6-ND'
+PRP Tolerance '10%'
+PRP Value '4.7µH'
+PRP Weight '0.000353oz'
+PRP Width '1.6mm'
+TOP 0 -0.5403544 1.2765947 90 N 63 1 1
+TOP 1 -0.5403544 1.2115947 90 N 128 70 2
+#
+# CMP 66
+CMP 8 -0.7805118 -0.7814961 90 N C41 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 -0.7805118 -0.7519685 90 N 115 69 1
+TOP 1 -0.7805118 -0.8110237 90 N 128 77 2
+#
+# CMP 67
+CMP 8 -0.7805118 -0.2657481 90 N C36 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 -0.7805118 -0.2362205 90 N 115 64 1
+TOP 1 -0.7805118 -0.2952757 90 N 128 71 2
+#
+# CMP 68
+CMP 8 -0.7805118 0.2185039 90 N C31 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 -0.7805118 0.2480315 90 N 115 65 1
+TOP 1 -0.7805118 0.1889763 90 N 128 72 2
+#
+# CMP 69
+CMP 8 -0.7716535 0.7105779 90 N C26 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 -0.7716535 0.7401055 90 N 115 66 1
+TOP 1 -0.7716535 0.6810503 90 N 128 73 2
+#
+# CMP 70
+CMP 5 -0.9576772 1.1493851 90 N C4 GRM188R60J106KE47J ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '10µF'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/murata-electronics/GRM188R60J106KE47J/10691412'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-08 20:07:22'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Murata Electronics'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 85°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'GRM188R60J106KE47J'
+PRP Part_Status 'Active'
+PRP partid '47219'
+PRP price '0.01'
+PRP Series 'GRM'
+PRP Size_/_Dimension '0.063_ L x 0.032_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '490-GRM188R60J106KE47JCT-ND'
+PRP Supplier_Part_Number_2 '490-GRM188R60J106KE47JDKR-ND'
+PRP Supplier_Part_Number_3 '490-GRM188R60J106KE47JTR-ND'
+PRP Temperature_Coefficient 'X5R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±10%'
+PRP Voltage_-_Rated '6.3V'
+TOP 0 -0.9576772 1.1770176 90 N 115 68 1
+TOP 1 -0.9576772 1.1217525 90 N 128 76 2
+#
+# CMP 71
+CMP 6 0.082017 1.021732 270 N C5 Cap_Ceramic_2.2_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL ''
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R5BB225/5195203'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:32'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603KRX7R5BB225'
+PRP Part_Status 'Active'
+PRP partid '41539'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1795-1-ND'
+PRP Supplier_Part_Number_2 '311-1795-6-ND'
+PRP Supplier_Part_Number_3 '311-1795-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±10%'
+PRP Value '2.2µF'
+PRP Voltage_-_Rated '6.3V'
+TOP 0 0.082017 0.9950787 270 N 61 1 1
+TOP 1 0.082017 1.0483853 270 N 128 74 2
+#
+# CMP 72
+CMP 2 -0.663386 1.3464567 180 N C3 Cap_Ceramic_0.1_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.1µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_18.pdf'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603JRX7R9BB104/5195188'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:09'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603JRX7R9BB104'
+PRP Part_Status 'Active'
+PRP partid '12474'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1779-1-ND'
+PRP Supplier_Part_Number_2 '311-1779-6-ND'
+PRP Supplier_Part_Number_3 '311-1779-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±5%'
+PRP Voltage_-_Rated '50V'
+TOP 0 -0.6367327 1.3464567 180 N 63 3 1
+TOP 1 -0.6900393 1.3464567 180 N 62 0 2
+#
+# CMP 73
+CMP 3 -0.4566929 1.2440945 90 N C2 Cap_Ceramic_0.22_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP Capacitance '0.22µF'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL 'https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx?la=en-us'
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/murata-electronics/GRM188R71E224KA88D/702554'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-05 20:08:17'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Murata Electronics'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'GRM188R71E224KA88D'
+PRP Part_Status 'Active'
+PRP partid '11196'
+PRP price '0.01'
+PRP Series 'GRM'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '490-3290-1-ND'
+PRP Supplier_Part_Number_2 '490-3290-6-ND'
+PRP Supplier_Part_Number_3 '490-3290-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±10%'
+PRP Voltage_-_Rated '25V'
+TOP 0 -0.4566929 1.272705 90 N 115 67 1
+TOP 1 -0.4566929 1.215484 90 N 64 1 2
+#
+# CMP 74
+CMP 6 0.9586614 1.1899606 90 N C1 Cap_Ceramic_2.2_uF_SMT_0603 ;0=1,1=0.0000
+PRP Applications 'General Purpose'
+PRP ComponentLink1Description 'Datasheet'
+PRP ComponentLink1URL ''
+PRP ComponentLink2Description 'DigiKey Link'
+PRP ComponentLink2URL 'https://www.digikey.com/en/products/detail/yageo/CC0603KRX7R5BB225/5195203'
+PRP Device_Package '0603 (1608 Metric)'
+PRP lastupdated '2023-03-06 20:08:32'
+PRP Lifecycle_Status 'Active'
+PRP Manufacturer 'Yageo'
+PRP Minimum_Order '1'
+PRP Mounting_Type 'Surface Mount, MLCC'
+PRP Operating_Temperature '-55°C ~ 125°C'
+PRP Package_/_Case '0603 (1608 Metric)'
+PRP Packaging 'TapeAndReel'
+PRP Part_Number 'CC0603KRX7R5BB225'
+PRP Part_Status 'Active'
+PRP partid '41539'
+PRP price '0.01'
+PRP Series 'CC'
+PRP Size_/_Dimension '0.063_ L x 0.031_ W (1.60mm x 0.80mm)'
+PRP Supplier_1 'Digi-Key'
+PRP Supplier_2 'Digi-Key'
+PRP Supplier_3 'Digi-Key'
+PRP Supplier_Part_Number_1 '311-1795-1-ND'
+PRP Supplier_Part_Number_2 '311-1795-6-ND'
+PRP Supplier_Part_Number_3 '311-1795-2-ND'
+PRP Temperature_Coefficient 'X7R'
+PRP Thickness_(Max) '0.035_ (0.90mm)'
+PRP Tolerance '±10%'
+PRP Value '2.2µF'
+PRP Voltage_-_Rated '6.3V'
+TOP 0 0.9586614 1.2166139 90 N 65 1 1
+TOP 1 0.9586614 1.1633073 90 N 128 75 2
+#

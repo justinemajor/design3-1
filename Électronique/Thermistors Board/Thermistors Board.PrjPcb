@@ -84,7 +84,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YOUTGPEY
 
 [Document3]
-DocumentPath=Matrix.SchDoc
+DocumentPath=Thermistors Array.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -169,23 +169,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
-DocumentPath=Thermistors Board.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document9]
 DocumentPath=Thermistors Board.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,12 +185,290 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document9]
+DocumentPath=CAD Exports.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document10]
+DocumentPath=Project Outputs\Fabrication\CAMtastic1.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
-DocumentPath=Project Outputs\Design Rule Check - Thermistors Board V2.html
+DocumentPath=Project Outputs\Assembly\Pick Place\_PCB PN_.csv
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs\Thermistors Board.xls
+DocumentPath=Project Outputs\Assembly\Test Points\_PCB PN_.csv
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs\Fabrication\NC Drill\_PCB PN_.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs\Fabrication\Gerber\_PCB PN_.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs\Assembly\Test Points\_PCB PN_.ipc
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs\Fabrication\Test Points\_PCB PN_.ipc
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs\Fabrication\NC Drill\_PCB PN_.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs\Fabrication\ODB\_PCB PN_.REP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs\Assembly\Pick Place\_PCB PN_.txt
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs\Assembly\Test Points\_PCB PN_.txt
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs\Fabrication\NC Drill\_PCB PN_.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\comp_+_bot\components
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\comp_+_top\components
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\eda\data
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_assembly\features
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_layer\features
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_overlay\features
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_paste\features
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_solder\features
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\bottom_surface_finish\features
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\comp_+_bot\features
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\comp_+_top\features
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\dielectric_1\features
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\drill_plated_bottom-top\features
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\keep-out_layer\features
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\mechanical_1\features
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_3d_body\features
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_assembly\features
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_component_center\features
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_courtyard\features
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_layer\features
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_overlay\features
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_paste\features
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_solder\features
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\top_surface_finish\features
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\matrix\matrix
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\netlists\cadnet\netlist
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\profile
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\stephdr
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=Project Outputs\CAD File\Thermistors_Board_Single_Part.step
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=Project Outputs\ExportSTEP\Thermistors_Board_Single_Part.step
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=Project Outputs\ERC\Thermistors Array.html
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument57]
+DocumentPath=Project Outputs\DiffReport\Thermistors Board V2.html
+DItemRevisionGUID=
+
+[GeneratedDocument58]
+DocumentPath=Project Outputs\DRC\Thermistors Board V2.html
+DItemRevisionGUID=
+
+[GeneratedDocument59]
+DocumentPath=Project Outputs\PCB 3D Print\Thermistors Board V2.png
+DItemRevisionGUID=
+
+[GeneratedDocument60]
+DocumentPath=Project Outputs\CAD File\Thermistors Board V2.step
+DItemRevisionGUID=
+
+[GeneratedDocument61]
+DocumentPath=Project Outputs\CAD Files\Thermistors Board V2.step
+DItemRevisionGUID=
+
+[GeneratedDocument62]
+DocumentPath=Project Outputs\CAD Files\Thermistors Board V2.x_t
+DItemRevisionGUID=
+
+[GeneratedDocument63]
+DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\drill_plated_bottom-top\tools
 DItemRevisionGUID=
 
 [Parameter1]
@@ -1233,7 +1494,7 @@ Type6=2
 Type7=0
 Type8=1
 Type9=1
-Type10=1
+Type10=0
 Type11=2
 Type12=0
 Type13=0
@@ -1398,10 +1659,16 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Design III Symbols.IntLib
-ComponentDesignItemID0=Header Connector 20 Pos 0.079" (2.00mm)
-ComponentSymbolReference0=Header Connector 20 Pos 0.079" (2.00mm)
+ComponentDesignItemID0=Standoff M3 5mm
+ComponentSymbolReference0=Standoff M3 5mm
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=Design III Symbols.IntLib
+ComponentDesignItemID1=Standoff M3 7mm
+ComponentSymbolReference1=Standoff M3 7mm
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1430,8 +1697,23 @@ ParameterUpdate5=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=Header Connector 20 Pos 0.079" (2.00mm)
+ModelName0=Keystone Square Washer pad
 ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=Standoff Brass M3 5mm SSW
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=Standoff Brass M3 5mm SW
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=Standoff M3 5mm Brass
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=Standoff M3 7mm Brass
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=Standoff M3 Pad
+ModelUpdate5=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

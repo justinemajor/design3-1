@@ -1,10 +1,10 @@
 [ProjectGroup]
 Version=1.0
 [Project1]
-ProjectPath=..\..\..\GPH\Datasheets\Arduino\MKR Zero\CAD\Imported MKRZero_V5.0.PrjPcb\MKRZero_V5.0.PrjPcb
-[Project2]
 ProjectPath=Laser Power Meter\Laser Power Meter.PrjPcb
-[Project3]
-ProjectPath=Design III Symbols.LibPkg
-[Project4]
+[Project2]
 ProjectPath=Thermistors Board\Thermistors Board.PrjPcb
+[Project3]
+ProjectPath=Libraries\Design III Symbols.LibPkg
+[Project4]
+ProjectPath=Power Meter Assembly\Power Meter Assembly.PrjMbd
