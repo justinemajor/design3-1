@@ -1,19 +1,18 @@
 #pragma once                               // Make sure the library is only import once
-
 #include <stdio.h>                         // Header file for standard input/output definitions
 #include <math.h>                          // Header file for various mathematical functions
 
 
 // ====================== Wheatstone bridge equation ======================
 
-double Vg = 0;                             // Voltage difference of the Weatstone bridge
-double Rx = 0;                             // Unknown thermistor resistance
-const float Vs = 3.3;                      // Weatstone bridge supply voltage
-const float G = 1.494;                     // Amplifier gain
-const unsigned short int Rref = 10E3;      // Wseatstone bridge's resistances value
+double Vg = 0;                              // Voltage difference of the Weatstone bridge
+double Rx = 0;                              // Unknown thermistor resistance
+const float Vs = 3.3;                       // Weatstone bridge supply voltage
+const float G = 1;                          // Amplifier gain
+const unsigned short int Rref = 10E3;       // Wseatstone bridge's resistances value
 
 
-double Vbias_wheatstone(double raw_ADC){
+double Vbias_wheatstone(unsigned short int raw_ADC){
     Vg = raw_ADC / G;
     Rx = Rref*(1 - (4*Vg) / (2*Vg - Vs));
     return Rx;
@@ -41,4 +40,5 @@ double Vbias_steinhart(double R){
     NLog3 = powf(NLog, 3);                  // Calculate NLog 3rd power
 	Temp = A + B*NLog + C*NLog2 + D*NLog3;  // Run the c-Hart equation
 	return powf(Temp, -1) - 273.15;         // Convert Kelvin to Celsius and return the temperature
+
 }

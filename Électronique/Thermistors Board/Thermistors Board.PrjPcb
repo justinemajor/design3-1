@@ -404,70 +404,58 @@ DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\stephdr
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=Project Outputs\CAD File\Thermistors_Board_Single_Part.step
-DItemRevisionGUID=
-
-[GeneratedDocument48]
 DocumentPath=Project Outputs\ExportSTEP\Thermistors_Board_Single_Part.step
 DItemRevisionGUID=
 
-[GeneratedDocument49]
+[GeneratedDocument48]
 DocumentPath=Project Outputs\ERC\Thermistors Array.html
 DItemRevisionGUID=
 
-[GeneratedDocument50]
+[GeneratedDocument49]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument51]
+[GeneratedDocument50]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument52]
+[GeneratedDocument51]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument53]
+[GeneratedDocument52]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GKO
 DItemRevisionGUID=
 
-[GeneratedDocument54]
+[GeneratedDocument53]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument55]
+[GeneratedDocument54]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument56]
+[GeneratedDocument55]
 DocumentPath=Project Outputs\Fabrication\GerberX2\Thermistors Board V2.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument57]
+[GeneratedDocument56]
 DocumentPath=Project Outputs\DiffReport\Thermistors Board V2.html
 DItemRevisionGUID=
 
-[GeneratedDocument58]
+[GeneratedDocument57]
 DocumentPath=Project Outputs\DRC\Thermistors Board V2.html
 DItemRevisionGUID=
 
-[GeneratedDocument59]
+[GeneratedDocument58]
 DocumentPath=Project Outputs\PCB 3D Print\Thermistors Board V2.png
 DItemRevisionGUID=
 
-[GeneratedDocument60]
+[GeneratedDocument59]
 DocumentPath=Project Outputs\CAD File\Thermistors Board V2.step
 DItemRevisionGUID=
 
-[GeneratedDocument61]
-DocumentPath=Project Outputs\CAD Files\Thermistors Board V2.step
-DItemRevisionGUID=
-
-[GeneratedDocument62]
-DocumentPath=Project Outputs\CAD Files\Thermistors Board V2.x_t
-DItemRevisionGUID=
-
-[GeneratedDocument63]
+[GeneratedDocument60]
 DocumentPath=Project Outputs\Fabrication\ODB\odb\steps\pcb\layers\drill_plated_bottom-top\tools
 DItemRevisionGUID=
 
