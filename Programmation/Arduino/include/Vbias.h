@@ -28,10 +28,10 @@ double NLog3 = 0;                          // Setup the variable for the third p
 double Temp = 0;					       // Setup the variable for the calculated temperature
 
 // Steinhart-Hart temperature coefficients for the thermistor
-const float A = 1.16462133E-03;
-const float B = 1.68263912E-04;
-const float C = 8.40212179E-06;
-const float D = -1.00120322E-07;
+const float A = 0.00335401643468053;
+const float B = 0.000300130825115663;
+const float C = 5.08516494379094E-06;
+const float D = 2.18765049258341E-07;
 
 
 double Vbias_steinhart(double R){

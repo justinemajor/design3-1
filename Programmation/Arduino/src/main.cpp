@@ -39,21 +39,6 @@ void setup() {
   // Enable internal pullups for unused pins 
   // pinMode(A0, INPUT_PULLUP);
   // pinMode(A2, INPUT_PULLUP);
-  // pinMode(A3, INPUT_PULLUP);
-  // pinMode(A4, INPUT_PULLUP);
-
-  // pinMode(0, INPUT_PULLUP);
-  // pinMode(1, INPUT_PULLUP);
-  // pinMode(3, INPUT_PULLUP);
-  // pinMode(4, INPUT_PULLUP);
-  // pinMode(5, INPUT_PULLUP);
-  // pinMode(6, INPUT_PULLUP);
-  // pinMode(7, INPUT_PULLUP);
-  // pinMode(8, INPUT_PULLUP);
-  // pinMode(9, INPUT_PULLUP);
-  // pinMode(10, INPUT_PULLUP);
-  // pinMode(11, INPUT_PULLUP);
-  // pinMode(12, INPUT_PULLUP);
 
 }
 
@@ -70,6 +55,6 @@ void loop() {
   Serial.println(R, 6);             // Display thermistor temperature to serial monitor
   digitalWrite(CS, HIGH);           // Pull the CS pin High to deactivate ADC's output
   SPI.endTransaction();             // End ADC communication
-  delay(5);                         // Add 5 ms delay between acquisition
+  // delay(5);                         // Add 5 ms delay between acquisition
 
 }
