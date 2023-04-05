@@ -1,6 +1,0 @@
-DRC Rules Export File for PCB: C:\Users\Maxime\OneDrive - Université Laval\Github\design3\Électronique\Laser Power Meter\4 Layers Motherboard.PcbDoc
-RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.12
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
-RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.87
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.87
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
