@@ -1,7 +1,0 @@
-2023-Feb-27 18:14:26
-Computer name:	AIENWARE-17-R5
-Number of cores used in calculation:	12
-Configuration name:	Défaut
-Project name:	Thermal V3
-
-Warnings on last iteration: 
